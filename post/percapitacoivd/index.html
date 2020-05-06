@@ -77,7 +77,7 @@ Coivd-19 spreads exponentially, as such it makes sense to chart the graph using 
 <p>Where <em>N</em> is the number of people affected and <em>t</em> is the number of days since the first infection. Of course, in real life the R varies constantly and no Covid-19 death graphs look like the one in this blog but the math behind it is still the same.</p>
 <p>If we model this on a normal graph we get this:
 <img src="/post/PerCapitaCoivd_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-Quickly the data becomes impossible to visualise as it increases exponentially. We can manage this with logarithms, this way we can display a wide range of numerical data in a compact way.
+<p>Quickly the data becomes impossible to visualise as it increases exponentially. We can manage this with logarithms, this way we can display a wide range of numerical data in a compact way.</p>
 <center>
 <span class="math inline">\(N = log(2^t)\)</span>
 </center>
@@ -100,14 +100,15 @@ Using <a href="https://en.wikipedia.org/wiki/List_of_logarithmic_identities">Log
 <div id="isnt-adjustment-important-when-comparing-countries-anyway" class="section level3">
 <h3>Isn’t adjustment important when comparing countries anyway?</h3>
 <p>In most cases adjusting for Per Capita makes sense but in the case of viruses it doesn’t. That’s because a virus <strong>isn’t limited by population</strong> per se.</p>
-<p>For example, take the country Malta as a theoretical example, it has a tiny popuation (only around 500,000) but it has one of the highest population density in the world (1,282 per square km). Since viruses only transfer from person to person in close proximity you would expect Malta to have a substantial amount of deaths. Compare this to a country such as Russia which has a population of almost 150 million but has a population density of 8.4 people per square km. It is already incredibly hard to make a fair comparison between these two countries as each situation is drastically different and to adjust for population would only exercabete the problem.</p>
+<p>For example, take the country Malta as a theoretical example, it has a tiny popuation (only around 500,000) but it has one of the highest population density in the world (1,282 per square km). Since viruses only transfer from person to person in close proximity you would expect Malta to have a substantial amount of deaths.</p>
+<p>Compare this to a country such as Russia which has a population of almost 150 million but has a population density of 8.4 people per square km. It is already incredibly hard to make a fair comparison between these two countries as each situation is drastically different and to adjust for population would only exercabete the problem.</p>
 <p>In addition to this, Covid-19 does not affect everyone equally and older people are far more susceptible to the virus than younger people. Therefore, countries with ageing populations such as Italy and Japan would expect to have far more deaths than countries such as New Zealand.</p>
 </div>
 <div id="so-what-is-the-best-method" class="section level3">
 <h3>So what is the best method?</h3>
 <p>Ultimately, it depends what you are trying to portray.</p>
 <p>If you are trying to demonstrate how far along a country is on the virus then there is no need to adjust the raw data at all.</p>
-<p>If you are trying to compare countries to see who has dealt with the crisis better, the best way would be to adjust for age.</p>
+<p>If you are trying to compare countries to see who has dealt with the crisis better, the best way would be to adjust for age but keep in mind that there really is no silver bullet in this case and anything you do won’t quite show the whole picture.</p>
 </div>
 </div>
 
