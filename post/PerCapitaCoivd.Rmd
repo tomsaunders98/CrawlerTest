@@ -1,0 +1,61 @@
+---
+title: "Per Capita and Covid Deaths Explained"
+author: "Tom Saunders"
+date: "06/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I'm a bit late to the discussion on Per Capita Graphs and their relation to Covid-19 deaths. Nevertheless, it's been on my mind a while and I wanted to lay out my thoughts on the issue.
+
+## 1. Logarithmic Graphs and Covid
+
+Coivd-19 spreads exponentially, as such it makes sense to chart the graph using logs. Let's take a very simple example, assuming that the **R** of Covid-19 is 2. This means for every 1 person who has the virus they will infect 2 people. If we assume that everyone infects their 2 people in a single say we can represent this matheticaly very easily:
+<center>
+$N = 2^t$
+</center>
+Where *N* is the number of people affected and *t* is the number of days since the first infection.
+
+If we model this on a normal graph we get this:
+```{r  echo=FALSE}
+t = 0:10
+n = 2^t
+plot(t,n, type="l")
+
+```
+
+
+Quickly the data becomes impossible to visualise as it increases exponentially. We can manage this with logarithms, this way we can display a wide range of numerical data in a compact way.
+<center>
+$N = log(2^t)$
+</center>
+
+```{r  echo=FALSE}
+t = 0:10
+logn = t*(log(2))
+
+plot(t,logn, type="l")
+
+```
+
+## 2. How does this relate to Per Capita?
+
+If we were representing this graph as per capita the equation would look like this:
+<center>
+$N = log($$\frac{2^t}{P}$$)$
+</center>
+(where P = population)
+Using [Logarithmic Identities]() this can be written like this:
+<center>
+$N = log(2^t) - log(P)$
+
+$N = t*log(2) - log(P)$
+</center>
+
+What this means is that adapting for Per Capita in a Logathirithmic graph *only shifts the graph up or down* by a factor of the population but it doesn't change its shape. The most important aspect of the Covid-19 graph is their shape as this can tell you whether a country is peaked, recovering or still in the early stages of the disease. We can visualise this quite easily:
+
+
+

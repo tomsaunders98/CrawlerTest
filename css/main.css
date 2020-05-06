@@ -80,7 +80,7 @@ b, strong {
 }
 
 a {
-  color: #333;
+  color: #007bff;
   text-decoration: none;
   word-break: break-word;
 }
@@ -88,6 +88,9 @@ a:hover {
   color: #808080;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, ul a{
+  color: #333;
+}
 hr {
     display: block;
     height: 1px;
@@ -105,6 +108,28 @@ img {
 
 a img {
   border:none;
+}
+img[src$='#center']
+{
+    display: block;
+    margin: 0.7rem auto; /* you can replace the vertical '0.7rem' by
+                            whatever floats your boat, but keep the
+                            horizontal 'auto' for this to work */
+    /* whatever else styles you fancy here */
+}
+
+img[src$='#floatleft']
+{
+    float:left;
+    margin: 0.7rem;      /* this margin is totally up to you */
+    /* whatever else styles you fancy here */
+}
+
+img[src$='#floatright']
+{
+    float:right;
+    margin: 0.7rem;      /* this margin is totally up to you */
+    /* whatever else styles you fancy here */
 }
 
 figure {
