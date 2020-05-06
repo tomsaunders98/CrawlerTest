@@ -3,6 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/projects/covidtracker/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/twitterstudy/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/chexit/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/themonocle/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
@@ -133,19 +149,11 @@
   </url>
   
   <url>
-    <loc>/projects/covidtracker/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/twitterstudy/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
     <loc>/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
   </url>
   
 </urlset>

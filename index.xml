@@ -12,6 +12,54 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A Covid-19 Test Tracker</title>
+      <link>/projects/covidtracker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/covidtracker/</guid>
+      <description>
+      
+      https://github.com/tomsaunders98/CovidTests
+      
+      </description>
+    </item>
+    <item>
+      <title>A Study of Twitter</title>
+      <link>/projects/twitterstudy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/twitterstudy/</guid>
+      <description>
+      
+      https://twitter.chexit.co.uk/
+      
+      </description>
+    </item>
+    <item>
+      <title>Chexit.co.uk</title>
+      <link>/projects/chexit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/chexit/</guid>
+      <description>
+      
+      https://chexit.co.uk/
+      
+      </description>
+    </item>
+    <item>
+      <title>The Monocle</title>
+      <link>/projects/themonocle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/themonocle/</guid>
+      <description>
+      
+      https:/themonoclenow.com
+      
+      </description>
+    </item>
+    <item>
       <title>Markdown Syntax Guide</title>
       <link>/post/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -84,31 +132,7 @@
       </description>
     </item>
     <item>
-      <title>A Covid-19 Test Tracker</title>
-      <link>/projects/covidtracker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/covidtracker/</guid>
-      <description>
-      
-      https://github.com/tomsaunders98/CovidTests
-      
-      </description>
-    </item>
-    <item>
-      <title>A Study of Twitter</title>
-      <link>/projects/twitterstudy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/twitterstudy/</guid>
-      <description>
-      
-      https://twitter.chexit.co.uk/
-      
-      </description>
-    </item>
-    <item>
-      <title>Welcome to my blog</title>
+      <title>About Me.</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
