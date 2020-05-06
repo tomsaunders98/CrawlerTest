@@ -79,19 +79,31 @@
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>
       
-      R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word ...
+      R MarkdownThis is an R Ok lets see document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Wo...
       
       </description>
     </item>
     <item>
-      <title>A list of my things.</title>
-      <link>/projects/</link>
+      <title>A Covid-19 Test Tracker</title>
+      <link>/projects/covidtracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/</guid>
+      <guid>/projects/covidtracker/</guid>
       <description>
       
-      My Projects
+      https://github.com/tomsaunders98/CovidTests
+      
+      </description>
+    </item>
+    <item>
+      <title>A Study of Twitter</title>
+      <link>/projects/twitterstudy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/twitterstudy/</guid>
+      <description>
+      
+      https://twitter.chexit.co.uk/
       
       </description>
     </item>
