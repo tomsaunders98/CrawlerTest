@@ -6,7 +6,7 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -55,6 +55,18 @@
       <description>
       
       https:/themonoclenow.com
+      
+      </description>
+    </item>
+    <item>
+      <title>Reflections on the Worst Covid Graph</title>
+      <link>/post/covidgraphreflections/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/covidgraphreflections/</guid>
+      <description>
+      
+      Once again, I’m late to the discussion on this. In fairness I am doing my Finals and as long as they are still hanging ...
       
       </description>
     </item>
