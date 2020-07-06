@@ -3,68 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tomjs.org/projects/covidtracker/</loc>
+    <loc>/projects/covidtracker/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/projects/twitterstudy/</loc>
+    <loc>/projects/twitterstudy/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/projects/chexit/</loc>
+    <loc>/projects/chexit/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/projects/themonocle/</loc>
+    <loc>/projects/themonocle/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/projects/cheapshot/</loc>
+    <loc>/projects/cheapshot/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/</loc>
+    <loc>/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tomjs.org/post/cheapshot/</loc>
+    <loc>/post/cheapshot/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tomjs.org/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tomjs.org/post/covidgraphreflections/</loc>
+    <loc>/post/covidgraphreflections/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tomjs.org/post/percapitacoivd/</loc>
+    <loc>/post/percapitacoivd/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tomjs.org/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/projects/</loc>
+    <loc>/projects/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/series/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>http://tomjs.org/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
