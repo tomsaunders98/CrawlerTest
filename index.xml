@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>@tomandthenews</title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <link>http://tomjs.org/</link>
+    <description>Recent content on tomjs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tomjs.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A Covid-19 Test Tracker</title>
-      <link>/projects/covidtracker/</link>
+      <link>http://tomjs.org/projects/covidtracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/covidtracker/</guid>
+      <guid>http://tomjs.org/projects/covidtracker/</guid>
       <description>
       
       https://github.com/tomsaunders98/CovidTests
@@ -24,10 +24,10 @@
     </item>
     <item>
       <title>A Study of Twitter</title>
-      <link>/projects/twitterstudy/</link>
+      <link>http://tomjs.org/projects/twitterstudy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/twitterstudy/</guid>
+      <guid>http://tomjs.org/projects/twitterstudy/</guid>
       <description>
       
       https://twitter.chexit.co.uk/
@@ -36,10 +36,10 @@
     </item>
     <item>
       <title>Chexit.co.uk</title>
-      <link>/projects/chexit/</link>
+      <link>http://tomjs.org/projects/chexit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/chexit/</guid>
+      <guid>http://tomjs.org/projects/chexit/</guid>
       <description>
       
       https://chexit.co.uk/
@@ -48,10 +48,10 @@
     </item>
     <item>
       <title>The Monocle</title>
-      <link>/projects/themonocle/</link>
+      <link>http://tomjs.org/projects/themonocle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/themonocle/</guid>
+      <guid>http://tomjs.org/projects/themonocle/</guid>
       <description>
       
       https:/themonoclenow.com
@@ -59,11 +59,35 @@
       </description>
     </item>
     <item>
+      <title>Chexit.co.uk</title>
+      <link>http://tomjs.org/projects/cheapshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/projects/cheapshot/</guid>
+      <description>
+      
+      https://github.com/tomsaunders98/CheapShot
+      
+      </description>
+    </item>
+    <item>
+      <title>How can AI help journalists?</title>
+      <link>http://tomjs.org/post/cheapshot/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/post/cheapshot/</guid>
+      <description>
+      
+      Journalism is often seen as a largely static discipline and at its core the actual practice of journalism has remained l...
+      
+      </description>
+    </item>
+    <item>
       <title>Reflections on the Worst Covid Graph</title>
-      <link>/post/covidgraphreflections/</link>
+      <link>http://tomjs.org/post/covidgraphreflections/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/covidgraphreflections/</guid>
+      <guid>http://tomjs.org/post/covidgraphreflections/</guid>
       <description>
       
       Once again, I’m late to the discussion on this. In fairness I am doing my Finals and as long as they are still hanging ...
@@ -72,10 +96,10 @@
     </item>
     <item>
       <title>Per Capita and Covid Deaths Explained</title>
-      <link>/post/percapitacoivd/</link>
+      <link>http://tomjs.org/post/percapitacoivd/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/percapitacoivd/</guid>
+      <guid>http://tomjs.org/post/percapitacoivd/</guid>
       <description>
       
       I’m a bit late to the discussion on Per Capita Graphs and their relation to Covid-19 deaths. Nevertheless, it’s been on...
@@ -84,10 +108,10 @@
     </item>
     <item>
       <title>About Me.</title>
-      <link>/about/</link>
+      <link>http://tomjs.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://tomjs.org/about/</guid>
       <description>
       
       My blog

@@ -2,20 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on @tomandthenews</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on </description>
+    <link>http://tomjs.org/post/</link>
+    <description>Recent content in Posts on tomjs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tomjs.org/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How can AI help journalists?</title>
+      <link>http://tomjs.org/post/cheapshot/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/post/cheapshot/</guid>
+      <description>
+      
+      Journalism is often seen as a largely static discipline and at its core the actual practice of journalism has remained l...
+      
+      </description>
+    </item>
+    <item>
       <title>Reflections on the Worst Covid Graph</title>
-      <link>/post/covidgraphreflections/</link>
+      <link>http://tomjs.org/post/covidgraphreflections/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/covidgraphreflections/</guid>
+      <guid>http://tomjs.org/post/covidgraphreflections/</guid>
       <description>
       
       Once again, I’m late to the discussion on this. In fairness I am doing my Finals and as long as they are still hanging ...
@@ -24,10 +36,10 @@
     </item>
     <item>
       <title>Per Capita and Covid Deaths Explained</title>
-      <link>/post/percapitacoivd/</link>
+      <link>http://tomjs.org/post/percapitacoivd/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/percapitacoivd/</guid>
+      <guid>http://tomjs.org/post/percapitacoivd/</guid>
       <description>
       
       I’m a bit late to the discussion on Per Capita Graphs and their relation to Covid-19 deaths. Nevertheless, it’s been on...
