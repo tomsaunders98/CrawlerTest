@@ -28,16 +28,21 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/cheapshot/</loc>
-    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+    <loc>/post/introtomodelling/</loc>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/cheapshot/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
