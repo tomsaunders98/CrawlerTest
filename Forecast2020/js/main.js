@@ -20,7 +20,7 @@ function BuildGraph(state, box, longstate) {
     width = 800 - margin.left - margin.right;
     height = 400 - margin.top - margin.bottom;
     aspratio = 50*height/width + "%";
-    var viewbox = [0, 0, 800, 800];
+    var viewbox = [0, 0, 800, 400];
   var svg2 = d3.select(box)
     .append("div") //clever hack to make svg responsive
     .classed("svg-container", true)
@@ -200,7 +200,7 @@ function ElectoralVotes(Graph) {
       width1 = 800 - margin1.left - margin1.right,
       height1 = 400 - margin1.top - margin1.bottom;
       aspratio = 50*height1/width1 + "%";
-      var viewbox = [0, 0, 900, 900];
+      var viewbox = [0, 0, 900, 500];
     var svg1 = d3.select("#hist_elect")
       .append("div") //clever hack to make svg responsive
       .classed("svg-container", true)
@@ -328,7 +328,7 @@ function BuildMap() {
   //build box and attach to div
   var width = 960;
   var height = 500;
-  var mapviewbox = [0, 0, 900, 900];
+  var mapviewbox = [0, 0, 900, 500];
   aspratio = 50*height/width + "%";
   var svg3 = d3.select("#map")
     .append("div") //clever hack to make svg responsive
