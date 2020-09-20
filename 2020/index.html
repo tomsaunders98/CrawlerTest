@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Dashboard Template for Bootstrap</title>
+  <!-- Uplevel Links (CSS)-->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/all.css" rel="stylesheet">
+  <link href="../../css/katex.min.css" rel="stylesheet">
+  <!-- Uplevel Links (JS)-->
+  <script src="../../js/katex.min.js"> </script>
+  <!-- Project Links -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/d3.v4.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div id="titletext">
+      <h1 id="title"><a href="https://tomjs.org/">@tomjs</a></h1>
+    </div>
+    <div id="title-description">
+      <p id="subtitle">More Words.</p>
+      <div id="social">
+        <nav>
+          <ul>
+            <li><a href="https://github.com/tomsaunders98"><i title="Github" class="icons fab fa-github"></i></a></li>
+            <li><a href="https://tomjs.org/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li>
+            <li><a href="https://twitter.com/tomjs"><i title="Twitter" class="icons fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tomsaunders98/"><i title="LinkedIn" class="icons fab fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:tomandthenews@gmail.com"><i title="Email" class="icons fas fa-envelope"></i></a></li>
+            <li><a href="https://tomjs.org/key.txt"><i title="PGP Key" class="icons fas fa-key"></i></a></li>
+            <li><a href="https://matrix.to/#/@tomandthenews:matrix.org"><i title="Matrix.org" class="icons fas fa-comments"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="mainmenu">
+      <nav>
+        <ul>
+          <li><a href="https://tomjs.org/">Home</a></li>
+          <li><a href="https://tomjs.org/about/">About</a></li>
+          <li><a href="https://tomjs.org/projects/">My Projects</a></li>
+          <li><a href="https://tomjs.org/post/">All Posts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="nav-sidebar" class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky side-nav sticky-top">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#topline">
+                  <span></span>
+                  2020 Election Prediction <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#votes">
+                  <span></span>
+                  Electoral Votes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#states">
+                  <span></span>
+                  The States
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#method">
+                  <span></span>
+                  Methodology
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#code">
+                  <span></span>
+                  Source Code
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main data-spy="scroll" data-target="#nav-sidebar" data-offset="0" role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 id="topline" class="headline">2020 Election Prediction</h1>
+          </div>
+          <div class="d-flex justify-content-center svgstuff" id="BigNumber"></div>
+          <script>
+            ElectoralVotes(false);
+          </script>
+          <div class="d-flex justify-content-center svgstuff" id="map"></div>
+          <script>
+            BuildMap();
+          </script>
+          <h2 id="votes">Electoral Vote Distribution</h2>
+          <hr />
+          <div class="d-flex justify-content-center svgstuff" id="hist_elect"></div>
+          <script>
+            ElectoralVotes(true);
+          </script>
+          <br />
+          <div class=" greydisc">
+            <p>Each time the model is run it simulations the election several thousand times. This histogram represents the outcomes of every simulation. The Y-axis represents the number of times Biden achieved a specific outcome when the model was run. In
+              order to win, Biden must get at least 270 electoral votes and that dividing point is marked on the histogram. </p>
+          </div>
+          <h2 id="states" class="headline">The States</h2>
+          <hr />
+          <div class="d-flex justify-content-center">
+            <p><a href="#" class="directlink" id="AK">AK </a>|<a class="directlink" href="#" id="AL"> AL </a>|<a class="directlink" href="#" id="AZ"> AZ </a>|<a class="directlink" href="#" id="AZ"> AZ </a>|<a class="directlink" href="#" id="CA"> CA
+              </a>|<a class="directlink" href="#" id="CO"> CO </a>|<a href="#" class="directlink" id="FL"> FL </a>|<a href="#" class="directlink" id="GA"> GA </a>|<a href="#" class="directlink" id="HI"> HI </a>|<a href="#" class="directlink" id="IA">
+                IA </a>|<a href="#" class="directlink" id="ID"> ID </a>|<a href="#" class="directlink" id="IN"> IN </a>|<a href="#" class="directlink" id="KS"> KS </a>|<a href="#" class="directlink" id="LA"> LA </a>|<a href="#" class="directlink"
+                id="MA"> MA </a>|<a href="#" class="directlink" id="MD"> MD </a>|<a href="#" class="directlink" id="ME"> ME </a>|<a href="#" class="directlink" id="MI"> MI </a>|<a href="#" class="directlink" id="MN"> MN </a>|<a href="#"
+                class="directlink" id="MO"> MO </a>|<a href="#" class="directlink" id="MS"> MS </a>|<a href="#" class="directlink" id="MT"> MT </a>|<a href="#" class="directlink" id="NC"> NC </a>|<a href="#" class="directlink" id="ND"> ND </a>|<a
+                href="#" class="directlink" id="NH"> NH </a>|<a href="#" class="directlink" id="NJ"> NJ </a>|<a href="#" class="directlink" id="NM"> NM </a>|<a href="#" class="directlink" id="NV"> NV </a>|<a href="#" class="directlink" id="OH"> OH
+              </a>|<a href="#" class="directlink" id="OK"> OK </a>|<a href="#" class="directlink" id="OR"> OR </a>|<a href="#" class="directlink" id="PA"> PA </a>|<a href="#" class="directlink" id="SC"> SC </a>|<a href="#" class="directlink" id="TN">
+                TN </a>|<a href="#" class="directlink" id="TX"> TX </a>|<a href="#" class="directlink" id="UT"> UT </a>|<a href="#" class="directlink" id="VA"> VA </a>|<a href="#" class="directlink" id="WA"> WA </a>|<a href="#" class="directlink"
+                id="WI"> WI </a></p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <br />
+            <p class="words"> Select a state above or search for one below:</p>
+            <br />
+          </div>
+          <div class="d-flex justify-content-center">
+            <input type="text" id="searchstate" />
+          </div>
+          <div class="d-flex justify-content-center svgstuff" id="title1"></div>
+          <div class="d-flex justify-content-center svgstuff" id="state"></div>
+          <br />
+          <script>
+            if (CurrentState == null) { //load florida graph on pageload
+              BuildGraph("FL", "state", "florida");
+            }
+            //link statelinks to graph function
+            $(".directlink").click(function(e) {
+              e.preventDefault();
+              var statetype = $(this).attr("id");
+              $("#state").empty();
+              var term = Object.keys(states).find(key => states[key] === statetype);
+              BuildGraph(statetype, "state", term);
+            });
+
+            //link searchbox to graph function
+            $("#searchstate").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              if (jQuery.inArray(value, SearchTerms) !== -1) {
+                var index = jQuery.inArray(value, SearchTerms);
+                var term = SearchTerms[index];
+                var $nopols = $("<p></p>").html("There is no polling available for <span class='cap'>" + term + "</span>.");
+                var statetype = states[term];
+                if (jQuery.inArray(statetype, StatesWPolls) == -1) {
+                  $("#desc").empty();
+                  $("#title1").html("<h4>" + term + "</h4>");
+                  $("#state").html($nopols);
+                } else {
+                  var box = "state";
+                  if (CurrentState != statetype) {
+                    $("#state").empty();
+                    BuildGraph(statetype, box, term);
+                  }
+                }
+              }
+            });
+          </script>
+          <div class="d-flex justify-content-center svgstuff" id="desc"></div>
+          <br />
+          <br />
+          <div class="greydisc">
+            <p>On each graph the blue line represents Biden’s estimated latent vote share up until the current day. The dotted line represents the model’s prediction of how the race will change from the current day until election day (November 3rd).
+              The shaded light blue area represents a 95% confidence interval of Biden’s vote share. In other words, the model is 95% confidence that Biden’s eventual vote share will end up within the shaded area. Finally, each green dot represents a
+              poll that has been released.</p>
+            <p>As you may have noticed, the more polling data available the more confident the model is of the latent vote intention. However, that confidence decreases as the model attempts to predict the vote share on election day.</p>
+          </div>
+          <h2 id="method"> The Methodology </h2>
+          <hr />
+          <div class="greydisc">
+            <div id="the-origins" class="section level3">
+              <h4>The Origins</h4>
+              <p>This is a direct implementation of Drew Linzer’s <a href="https://votamatic.org/wp-content/uploads/2013/07/Linzer-JASA13.pdf">dynamic Bayesian forecasting model</a>. This makes it similar at its core to The Economist’s <a
+                  href="https://projects.economist.com/us-2020-forecast/president">presidential forecast</a> as well as the <a href="https://www.slate.com/features/pkremp_forecast/report.html">2016 election model</a> by Pierre-Antoine Kremp for
+                Slate.</p>
+              <p>The model uses the <a href="https://fairmodel.econ.yale.edu/RAYFAIR/PDF/2007A.pdf">Fair model</a>, developed by Yale economist Ray Fair, as its informative Bayesian prior, <span class="math inline">\(h_i\)</span> for states <span
+                  class="math inline">\(i=1 … 50\)</span>. The Fair model takes into account incumbency, the state of the economy and whether or not the incumbent party has been in office for two or more consecutive terms in order to predict the vote
+                share for both parties.</p>
+            </div>
+            <div id="how-polls-are-interpreted" class="section level3">
+              <h4>How polls are interpreted</h4>
+              <p>For each poll, the number of respondents declaring that they will vote for Joe Biden (<span class="math inline">\(y_k\)</span>) is drawn from a binomial distribution where <span class="math inline">\(i[k]\)</span> and <span
+                  class="math inline">\(j[k]\)</span> indicate the state, <span class="math inline">\(i\)</span>, and day, <span class="math inline">\(j\)</span>, of poll <span class="math inline">\(k\)</span> and <span
+                  class="math inline">\(n_k\)</span> denotes the total number of respondents who indicate a preference for one of the two major parties:</p>
+              <p><span class="math display">\[y_k \sim Binomial(\pi_{i[k]j[k]}, n_k)\]</span></p>
+              <p>As this is a direct implementation of Linzer’s model it only takes into account state polls of “Likely Voters” and ignores national polls as well as polls of “Registered Voters”. It also does not take into account house effects or
+                other sources of survey error like other, more advanced, models do.</p>
+            </div>
+            <div id="how-latent-voter-intention-is-estimated" class="section level3">
+              <h4>How latent voter intention is estimated</h4>
+              <p>The daily trends in all states latent voter intention <span class="math inline">\(\pi_{ij}\)</span> are estimated simultaneously as a function of two components: a state-level component, <span
+                  class="math inline">\(\beta_{ij}\)</span>, and a national-level component, <span class="math inline">\(\delta_j\)</span>, that detect systematic departures from <span class="math inline">\(\beta_{ij}\)</span> due to events that
+                affect all states, such as convention bounces. Both components are placed on the logit scale:</p>
+              <p><span class="math display">\[\pi_{ij} = logit^{-1}(\beta_{ij} + \delta_j) \]</span></p>
+            </div>
+            <div id="how-the-forecast-is-made" class="section level3">
+              <h4>How the forecast is made</h4>
+              <p>On election day (<span class="math inline">\(\delta_j\)</span>) is fixed at 0 and (<span class="math inline">\(\beta_{ij}\)</span>) is defined as a Normal distribution around the structural forecast <span
+                  class="math inline">\(h_i\)</span>. The covariance matrix (a slight departure from Linzer’s initial paper) is set at variance of 0.18 and covariance of 0.162. This ensures that state scores are correlated with each other, since it
+                is highly unlikely that Biden will perform better in Texas than Virginia, something an independent prior would not take into account.</p>
+              <p><span class="math display">\[\beta_{iJ} \sim Multivariate Normal(logit(h_i), \Sigma_{end})\]</span></p>
+              <p>When predicting the election result weeks or months in advance, there will inevitably be a gap in the polling data. In order to bridge this gap, as well as smoothing voter intention on days no polls are conducted, both the state and
+                national level component use a Bayesian reverse random-walk prior which begins on election day.</p>
+              <p>Each day’s estimation of <span class="math inline">\(\beta_{ij}\)</span> is given prior distribution:</p>
+              <p><span class="math display">\[\beta_{ij}|\beta_{ij+1} \sim MultivariateNormal(\beta_{ij+1}, \Sigma_{walk})\]</span></p>
+              <p>Similarly, <span class="math inline">\(\delta_j\)</span> is given a prior distribution:</p>
+              <p><span class="math display">\[\delta_j|\delta_{j+1} \sim MultivariateNormal(\delta_{j+1}, \Sigma_{walk})\]</span></p>
+              <p>The variance is also give as <span class="math inline">\(\Sigma_{walk}\)</span> with variance = <span class="math inline">\(0.017^2\)</span> and covariance = 0.0002601.</p>
+            </div>
+            <div id="what-the-forecast-is-doing" class="section level3">
+              <h4>What the forecast is doing</h4>
+              <p>Overall, the election day forecast in each state is a compromise between the structural model, <span class="math inline">\(h_i\)</span>, and the most recent poll result. The uncertainty depends on the number and size of the polls
+                available as well as the proximity to election day. As older state polls are replaced by newer ones they have less influence on the forecast but they leave behind historical trends in the latent voter intention.</p>
+              <p>Finally, the electoral vote distribution for Joe Biden is then determined by the probability that Biden’s vote share will be greater than 50% in any given state.</p>
+            </div>
+          </div>
+          <h2 id="code"> Where to Find the Source Code </h2>
+          <hr />
+          <div class=" greydisc">
+            <p>The code for this model is all available on GitHub and is separated into three main files:</p>
+            <ul>
+              <li>Polls.Stan: The stan code used to compute the MCMC draws.</li>
+              <li>Runmodel.R: The code to wrangle the poll data so that it can be inserted into the model. It then analyses the model output to develop the visualisation data.</li>
+              <li>Main.js: The d3.js code used to produce the visualisations for the model.</li>
+            </ul>
+            <p>I also highly recommend that you check out the source-code for <a href="https://github.com/TheEconomist/us-potus-model">The Economist’s model</a>, <a href="https://pkremp.github.io/report.html">Pierre-Antoine Kremp's model</a> from
+              2016 and <a href="https://corymccartan.github.io/election-2020/">Cory Mccartan’s model</a>. Their code was highly instrumental in enabling me to develop my own forecast.</p>
+          </div>
+        </main>
+      </div>
+    </div>
+</body>
+</html>
