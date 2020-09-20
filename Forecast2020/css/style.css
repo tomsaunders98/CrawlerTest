@@ -625,3 +625,6 @@ div.tooltip ul{
     top: 10px;
     left: 0;
 }
+.nav-item{
+  padding-bottom: 2%;
+}

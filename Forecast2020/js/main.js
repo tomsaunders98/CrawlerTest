@@ -326,14 +326,15 @@ function ElectoralVotes(Graph) {
 function BuildMap() {
 
   //build box and attach to div
-  var width = 960;
-  var height = 500;
-  var mapviewbox = [0, 0, 900, 500];
+  var width = 1100;
+  var height = 600;
+  var mapviewbox = [0, 0, 1100, 600];
   aspratio = 50*height/width + "%";
   var svg3 = d3.select("#map")
     .append("div") //clever hack to make svg responsive
     .classed("svg-container", true)
-    .style("padding-bottom", aspratio) //container class to make it responsive
+    .style("padding-bottom", "40%")
+    .style("width", "80%")
     .append("svg")
     .attr("viewBox", mapviewbox)
     .attr("preserveAspectRatio","xMinYMin meet")
@@ -354,10 +355,12 @@ function BuildMap() {
     .projection(projection);
 
   //build tooltip box
-  var div = d3.select("#map")
-    .append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0);
+  if($(window).width() > 500){ //tooltip doesn't work om mobile
+    var div = d3.select("#map")
+      .append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+  }
 
   d3.csv("https://raw.githubusercontent.com/tomsaunders98/2020ElectionModel/master/output/FinalResults.csv", function(data) {
 
@@ -499,10 +502,21 @@ $(document).on('click', '.nav-link', function(event) {
   }, 500);
 });
 
-//Math symbols
-(function () {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-  document.getElementsByTagName("head")[0].appendChild(script);
-})();
+MathJax = {
+  chtml: {
+    scale: 1,                      // global scaling factor for all expressions
+    minScale: 0.5,                  // smallest scaling factor to use
+    matchFontHeight: true,         // true to match ex-height of surrounding font
+    mtextInheritFont: false,       // true to make mtext elements use surrounding font
+    merrorInheritFont: false,       // true to make merror text use surrounding font
+    mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
+    skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
+    exFactor: .5,                  // default size of ex in em units
+    displayAlign: 'center',        // default for indentalign when set to 'auto'
+    displayIndent: '0',            // default for indentshift when set to 'auto'// The URL where the fonts are found
+    adaptiveCSS: true              // true means only produce CSS that is used in the processed equations
+  }
+};
+if($(window).width() < 500){ //load smaller symbols if mobile portrait
+  MathJax.chtml.scale = 0.6;
+}

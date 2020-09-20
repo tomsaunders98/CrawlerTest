@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142120975-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-142120975-2');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -20,6 +29,8 @@
   <script src="js/popper.min.js"></script>
   <script src="js/d3.v4.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <header>
@@ -200,7 +211,7 @@
               <p>For each poll, the number of respondents declaring that they will vote for Joe Biden (<span class="math inline">\(y_k\)</span>) is drawn from a binomial distribution where <span class="math inline">\(i[k]\)</span> and <span
                   class="math inline">\(j[k]\)</span> indicate the state, <span class="math inline">\(i\)</span>, and day, <span class="math inline">\(j\)</span>, of poll <span class="math inline">\(k\)</span> and <span
                   class="math inline">\(n_k\)</span> denotes the total number of respondents who indicate a preference for one of the two major parties:</p>
-              <p><span class="math display">\[y_k \sim Binomial(\pi_{i[k]j[k]}, n_k)\]</span></p>
+              <p><span class="math display">\[\small y_k \sim Binomial(\pi_{i[k]j[k]}, n_k)\]</span></p>
               <p>As this is a direct implementation of Linzer’s model it only takes into account state polls of “Likely Voters” and ignores national polls as well as polls of “Registered Voters”. It also does not take into account house effects or
                 other sources of survey error like other, more advanced, models do.</p>
             </div>
@@ -209,20 +220,20 @@
               <p>The daily trends in all states latent voter intention <span class="math inline">\(\pi_{ij}\)</span> are estimated simultaneously as a function of two components: a state-level component, <span
                   class="math inline">\(\beta_{ij}\)</span>, and a national-level component, <span class="math inline">\(\delta_j\)</span>, that detect systematic departures from <span class="math inline">\(\beta_{ij}\)</span> due to events that
                 affect all states, such as convention bounces. Both components are placed on the logit scale:</p>
-              <p><span class="math display">\[\pi_{ij} = logit^{-1}(\beta_{ij} + \delta_j) \]</span></p>
+              <p><span class="math display">\[\small \pi_{ij} = logit^{-1}(\beta_{ij} + \delta_j) \]</span></p>
             </div>
             <div id="how-the-forecast-is-made" class="section level3">
               <h4>How the forecast is made</h4>
               <p>On election day (<span class="math inline">\(\delta_j\)</span>) is fixed at 0 and (<span class="math inline">\(\beta_{ij}\)</span>) is defined as a Normal distribution around the structural forecast <span
                   class="math inline">\(h_i\)</span>. The covariance matrix (a slight departure from Linzer’s initial paper) is set at variance of 0.18 and covariance of 0.162. This ensures that state scores are correlated with each other, since it
                 is highly unlikely that Biden will perform better in Texas than Virginia, something an independent prior would not take into account.</p>
-              <p><span class="math display">\[\beta_{iJ} \sim Multivariate Normal(logit(h_i), \Sigma_{end})\]</span></p>
+              <p><span class="math display">\[\small \beta_{iJ} \sim Multivariate Normal(logit(h_i), \Sigma_{end})\]</span></p>
               <p>When predicting the election result weeks or months in advance, there will inevitably be a gap in the polling data. In order to bridge this gap, as well as smoothing voter intention on days no polls are conducted, both the state and
                 national level component use a Bayesian reverse random-walk prior which begins on election day.</p>
               <p>Each day’s estimation of <span class="math inline">\(\beta_{ij}\)</span> is given prior distribution:</p>
-              <p><span class="math display">\[\beta_{ij}|\beta_{ij+1} \sim MultivariateNormal(\beta_{ij+1}, \Sigma_{walk})\]</span></p>
+              <p><span class="math display">\[\small \beta_{ij}|\beta_{ij+1} \sim MultivariateNormal(\beta_{ij+1}, \Sigma_{walk})\]</span></p>
               <p>Similarly, <span class="math inline">\(\delta_j\)</span> is given a prior distribution:</p>
-              <p><span class="math display">\[\delta_j|\delta_{j+1} \sim MultivariateNormal(\delta_{j+1}, \Sigma_{walk})\]</span></p>
+              <p><span class="math display">\[\small \delta_j|\delta_{j+1} \sim MultivariateNormal(\delta_{j+1}, \Sigma_{walk})\]</span></p>
               <p>The variance is also give as <span class="math inline">\(\Sigma_{walk}\)</span> with variance = <span class="math inline">\(0.017^2\)</span> and covariance = 0.0002601.</p>
             </div>
             <div id="what-the-forecast-is-doing" class="section level3">
@@ -235,11 +246,11 @@
           <h2 id="code"> Where to Find the Source Code </h2>
           <hr />
           <div class=" greydisc">
-            <p>The code for this model is all available on GitHub and is separated into three main files:</p>
+            <p>The code for this model is all available on <a href= "https://github.com/tomsaunders98/2020ElectionModel">GitHub</a> and is separated into three main files:</p>
             <ul>
-              <li>Polls.Stan: The stan code used to compute the MCMC draws.</li>
-              <li>Runmodel.R: The code to wrangle the poll data so that it can be inserted into the model. It then analyses the model output to develop the visualisation data.</li>
-              <li>Main.js: The d3.js code used to produce the visualisations for the model.</li>
+              <li><a href="https://github.com/tomsaunders98/2020ElectionModel/blob/master/Polls.stan">Polls.stan</a>: The stan code used to compute the MCMC draws.</li>
+              <li><a href="https://github.com/tomsaunders98/2020ElectionModel/blob/master/LoadModel.R">Runmodel.R</a>: The code to wrangle the poll data so that it can be inserted into the model. It then analyses the model output to develop the visualisation data.</li>
+              <li><a href="https://github.com/tomsaunders98/tomsaunders98.github.io/blob/master/Forecast2020/js/main.js">Main.js</a>: The d3.js code used to produce the visualisations for the model.</li>
             </ul>
             <p>I also highly recommend that you check out the source-code for <a href="https://github.com/TheEconomist/us-potus-model">The Economist’s model</a>, <a href="https://pkremp.github.io/report.html">Pierre-Antoine Kremp's model</a> from
               2016 and <a href="https://corymccartan.github.io/election-2020/">Cory Mccartan’s model</a>. Their code was highly instrumental in enabling me to develop my own forecast.</p>
