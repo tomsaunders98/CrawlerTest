@@ -372,7 +372,7 @@ function BuildMap() {
     var GOPscale = d3.scaleLinear().domain([MinGOPVal, MaxGOPVal]).range([LowGOPColour, HighGOPColour]);
     var Demscale = d3.scaleLinear().domain([MinDemVal, MaxDemVal]).range([LowDemColour, HighDemColour]);
 
-    d3.json("us-states.json", function(json) {
+    d3.json("js/us-states.json", function(json) {
 
       //load json and check for matching states
       for (var i = 0; i < data.length; i++) {
