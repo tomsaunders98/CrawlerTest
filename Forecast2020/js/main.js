@@ -5,7 +5,9 @@ var ElectoralData;
 
 function BuildFracB(num){ //building clear fractions
   num = Number(num).toFixed(2);
-  console.log(num);
+  if (num == 1){
+    return ">99%";
+  }
     function checkmod(num){
       num = num*100;
       for (let denom =2; denom < 11; denom++){
@@ -18,15 +20,12 @@ function BuildFracB(num){ //building clear fractions
   if (checkmod(num) == false){
     do {
       num = (num - 0.01).toFixed(2);
-      console.log(num);
     } while (checkmod(num) == false);
   }
   if (num == 0){
     return "<1%";
   }
-  if (num == 1){
-    return ">99%";
-  }
+
   var f = new Fraction(num);
   return f.numerator + " out of " + f.denominator;
 }
