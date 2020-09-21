@@ -3,6 +3,35 @@ var AllData;
 var CurrentState;
 var ElectoralData;
 
+function BuildFracB(num){ //building clear fractions
+  num = Number(num).toFixed(2);
+  console.log(num);
+    function checkmod(num){
+      num = num*100;
+      for (let denom =2; denom < 11; denom++){
+        if (num % denom == 0 && num < denom*denom){
+          return true;
+        }
+      }
+      return false;
+  }
+  if (checkmod(num) == false){
+    do {
+      num = (num - 0.01).toFixed(2);
+      console.log(num);
+    } while (checkmod(num) == false);
+  }
+  if (num == 0){
+    return "<1%";
+  }
+  if (num == 1){
+    return ">99%";
+  }
+  var f = new Fraction(num);
+  return f.numerator + " out of " + f.denominator;
+}
+
+
 //buildstate graphs
 function BuildGraph(state, box, longstate) {
   //set variables
@@ -284,8 +313,8 @@ function ElectoralVotes(Graph) {
         .attr("y2", y(1400))
 
       svg1.append("text")
-        .attr("x", x(avg + 5))
-        .attr("y", y(1300))
+        .attr("x", x(avg - 115))
+        .attr("y", y(1000))
         .text("Biden expected to win " + avg + " Electoral Votes")
         .style("font-size", "15px")
 
@@ -317,7 +346,21 @@ function ElectoralVotes(Graph) {
       var Votes = ElectoralData.map(x => x.result_ev_all_states);
       var WinningVotes = Votes.filter(vote => vote >= 270);
       var Prob = Math.round((WinningVotes.length / Votes.length) * 100);
-      $("#BigNumber").html("<h2> There is a <span class='demblue'>" + Prob + "%</span> chance of Biden winning the Presidency.</h2>");
+      if (Prob > 80 ){
+        word = "very likely";
+      }if (Prob > 60 && Prob < 80){
+        word = "likely";
+      }if (Prob > 40 && Prob < 60){
+        $("#BigNumber").html("<h2> It is <span class='demblue'>unclear</span> who will win the presidency</h2>");
+      }if (Prob > 20 && Prob < 40){
+        word = "not likely";
+      }if (Prob < 20){
+        word = "very unlikey";
+      }
+      if (Prob < 40 || Prob > 60){
+        $("#BigNumber").html("<h2> Biden is <span class='demblue'>" + word + "</span> to win the Presidency.</h2>");
+      }
+
     }
   });
 }
@@ -341,10 +384,10 @@ function BuildMap() {
     .classed("svg-content-responsive", true)
 
   //assign colours for two scales (Dem + GOP)
-  var HighGOPColour = "#f7a0a3";
+  var HighGOPColour = "#f9d6d7";
   var LowGOPColour = "#E9141D";
   var HighDemColour = "#0015BC";
-  var LowDemColour = "#5769ff";
+  var LowDemColour = "#d6d9f9";
 
   //get usa projection and add to path
   var projection = d3.geoAlbersUsa()
@@ -418,9 +461,9 @@ function BuildMap() {
             .duration(200)
             .style("opacity", .8);
           if (d.properties.poll == "FALSE") {
-            div.html("<ul><li><b>" + d.properties.name + "</b></li><li>" + Math.round(d.properties.pred * 100) + "% chance of Biden winning</li><li>No Polls Available</li></ul>");
+            div.html("<ul><li><b>" + d.properties.name + "</b></li><li>" + BuildFracB(d.properties.pred) + " chance of Biden winning</li><li>No Polls Available</li></ul>");
           } else {
-            div.html("<ul><li><b>" + d.properties.name + "</b></li><li>" + Math.round(d.properties.pred * 100) + "% chance of Biden winning</li></ul>");
+            div.html("<ul><li><b>" + d.properties.name + "</b></li><li>" + BuildFracB(d.properties.pred) + " chance of Biden winning</li></ul>");
           }
           div.style("left", (d3.event.pageX - 300) + "px") //position linked to mouse position
             .style("top", (d3.event.pageY - 150) + "px");
