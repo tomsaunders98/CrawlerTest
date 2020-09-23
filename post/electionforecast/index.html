@@ -39,15 +39,15 @@
   <div id="mainmenu">
     <nav>
       <ul>
-        
+
         <li><a href="/">Home</a></li>
-        
+
         <li><a href="/about">About</a></li>
-        
+
         <li><a href="/projects">My Projects</a></li>
-        
+
         <li><a href="/post">All Posts</a></li>
-        
+
       </ul>
     </nav>
   </div>
@@ -82,7 +82,7 @@
 <div id="where-the-model-goes-wrong" class="section level2">
 <h2>Where the model goes wrong</h2>
 <p>Since this is a basic implementation it doesn’t take into account a poll’s house effect or adjust for its type . The prior forecast also doesn’t take into account the partisanship, which is generally understood to be a key metric in determining the outcomes in each state. Ultimately, this is a bare bones forecast that has only one criteria for state polls, that they are composed of “likely voters” rather than just “registered voters”. A more detailed description of the methodology is available on the model itself <a href="https://tomjs.org/Forecast2020/#method">here</a>.</p>
-<p>These issues, amongst others, have led to the forecast being rather bullish. For example, a 68% chance of winning Texas is well outside the margins of most forecasts. However, this is mostly due to the difficulty of constructing accurate fundamental priors for the election (I have written more in-depth about the challenges of fundamental priors here). For my model I have used the <a href="https://pollyvote.com/en/components/models/retrospective/fundamentals-only-models/fair-model/">Fair model</a>, which has been used to predict elections since 1980. Unfortunately, due to Covid-19 and the precipitous deterioration in economic conditions it has been incredibly hard to design an accurate economic component for a fundamental prior. In the end, the values I have used have created a fundamental prior that expects Biden to win 51% of the vote and this has inevitably led to bullish predictions in a few red states such as Texas and Florida in which results can be close but historically lean Republican.</p>
+<p>These issues, amongst others, have led to the forecast being rather bullish. For example, a 68% chance of winning Texas is well outside the margins of most forecasts. However, this is mostly due to the difficulty of constructing accurate fundamental priors for the election (I have written more in-depth about the challenges of fundamental priors <a href="https://tomjs.org/post/introtomodelling/">here</a>). For my model I have used the <a href="https://pollyvote.com/en/components/models/retrospective/fundamentals-only-models/fair-model/">Fair model</a>, which has been used to predict elections since 1980. Unfortunately, due to Covid-19 and the precipitous deterioration in economic conditions it has been incredibly hard to design an accurate economic component for a fundamental prior. In the end, the values I have used have created a fundamental prior that expects Biden to win 51% of the vote and this has inevitably led to bullish predictions in a few red states such as Texas and Florida in which results can be close but historically lean Republican.</p>
 </div>
 <div id="a-technical-note" class="section level2">
 <h2>A Technical Note</h2>

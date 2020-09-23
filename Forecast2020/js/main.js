@@ -69,6 +69,7 @@ function BuildGraph(state, box, longstate) {
       d.CILeft = d.CILeft;
       d.Pred = (d.Pred === "NA") ? null : +d.Pred;
       d.Poll = (d.Poll === "NA") ? null : +d.Poll;
+      d.PollDiff = (d.PollDiff === "NA") ? null : +d.PollDiff;
       return d;
     },
 
@@ -150,7 +151,7 @@ function BuildGraph(state, box, longstate) {
           return y(d.Poll);
         })
         .attr("r", 2.5)
-        .style("fill", "#69b3a2")
+        .style("fill", "#7a8985")
 
       //add line denoting election day + text
       svg2.append("text")
@@ -178,23 +179,26 @@ function BuildGraph(state, box, longstate) {
 
       //build description that goes under the graph
       var Preds = AllData.map(x => x.Pred);
-      var Polls = AllData.map(x => x.Poll);
+      var Polls = AllData.map(x => x.PollDiff);
       var Polls = Polls.filter(poll => poll != null);
-      var VisPoll = Math.round(Polls[Polls.length - 1] * 100);
+      var VisPoll = Math.round(Polls[Polls.length - 1]);
+      if (VisPoll > 0){
+        VisPoll = "+" + VisPoll;
+      }
       var FinalPred = Preds[Preds.length - 1];
       var VisPred = Math.round(FinalPred * 100);
       var $closedem = $('<ul></ul>').html("<li>This state will likely be <span class='demblue'>Democrat</span>.</li>")
         .append("<li>Biden's predicted vote share is <span class='demblue'>" + VisPred + "%</span>.</li>")
-        .append("<li>The last available poll gave Biden <span class='demblue'>" + VisPoll + "%</span> of the vote.</li>");
+        .append("<li>The last available poll gave Biden: <span class='demblue'>" + VisPoll + "</span></li>");
       var $defdem = $('<ul></ul>').html("<li>This state will probably be <span class='demblue'>Democrat</span>.</li>")
         .append("<li>Biden's predicted vote share is <span class='demblue'>" + VisPred + "%</span>.</li>")
-        .append("<li>The last available poll gave Biden <span class='demblue'>" + VisPoll + "%</span> of the vote.</li>");
+        .append("<li>The last available poll gave Biden: <span class='demblue'>" + VisPoll + "</span></li>");
       var $closegop = $('<ul></ul>').html("<li>This state will likely be <span class='gopred'>Republican</span>.</li>")
         .append("<li>Biden's predicted vote share is <span class='gopred'>" + VisPred + "%</span>.</li>")
-        .append("<li>The last available poll gave Biden <span class='gopred'>" + VisPoll + "%</span> of the vote.</li>");
+        .append("<li>The last available poll gave Biden: <span class='gopred'>" + VisPoll + "</span></li>");
       var $defgop = $('<ul></ul>').html("<li>This state will probably be <span class='gopred'>Republican</span>.</li>")
         .append("<li>Biden's predicted vote share is <span class='gopred'>" + VisPred + "%</span>.</li>")
-        .append("<li>The last available poll gave Biden <span class='gopred'>" + VisPoll + "%</span> of the vote.</li>");
+        .append("<li>The last available poll gave Biden: <span class='gopred'>" + VisPoll + "</span></li>");
       if (FinalPred > 0.5 && FinalPred < 0.56) {
         $("#title1").html("<h4>" + longstate + "</h4>");
         $("#desc").html($closedem);
