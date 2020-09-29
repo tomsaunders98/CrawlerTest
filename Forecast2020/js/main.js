@@ -349,6 +349,7 @@ function ElectoralVotes(Graph) {
       var Votes = ElectoralData.map(x => x.result_ev_all_states);
       var WinningVotes = Votes.filter(vote => vote >= 270);
       var Prob = Math.round((WinningVotes.length / Votes.length) * 100);
+      console.log("Topline: " + Prob + "%");
       if (Prob > 80 ){
         word = "very likely";
       }if (Prob > 60 && Prob < 80){
