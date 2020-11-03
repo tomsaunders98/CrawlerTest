@@ -414,13 +414,14 @@ function BuildMap() {
     //build two scales from red -> pale red for GOP states, blue -> pale blue for Dem states
     var DataArray = data.map(x => x.pred);
     var GOPstates = DataArray.filter(x => x < 0.5);
+    console.log(GOPstates)
     var Demstates = DataArray.filter(x => x > 0.5);
     var MinGOPVal = d3.min(GOPstates);
     var MaxGOPVal = d3.max(GOPstates);
     var MinDemVal = d3.min(Demstates);
     var MaxDemVal = d3.max(Demstates);
-    var GOPscale = d3.scaleLinear().domain([MinGOPVal, MaxGOPVal]).range([LowGOPColour, HighGOPColour]);
-    var Demscale = d3.scaleLinear().domain([MinDemVal, MaxDemVal]).range([LowDemColour, HighDemColour]);
+    var GOPscale = d3.scaleLinear().domain([0, 0.5]).range([LowGOPColour, HighGOPColour]);
+    var Demscale = d3.scaleLinear().domain([0.5, 1]).range([LowDemColour, HighDemColour]);
 
     d3.json("js/us-states.json", function(json) {
 
