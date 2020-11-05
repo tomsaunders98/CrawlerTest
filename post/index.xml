@@ -6,10 +6,46 @@
     <description>Recent content in Posts on tomjs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://tomjs.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Political Facebook Adverts</title>
+      <link>https://tomjs.org/post/facebookads/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tomjs.org/post/facebookads/</guid>
+      <description>
+      
+        Using Facebook’s Ad Library API, I’ve taken a look about what Facebook ads can tell us about the final month of the Re...
+      
+      </description>
+    </item>
+    <item>
+      <title>I built an Election Forecast</title>
+      <link>https://tomjs.org/post/electionforecast/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tomjs.org/post/electionforecast/</guid>
+      <description>
+      
+       I have released a forecast for the 2020 presidential election, which has been in the works for a couple of months. Orig...
+      
+      </description>
+    </item>
+    <item>
+      <title>An Introduction to Election Modelling</title>
+      <link>https://tomjs.org/post/introtomodelling/</link>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tomjs.org/post/introtomodelling/</guid>
+      <description>
+      
+       Introduction Much like weather forecasting is the practice of using current and past meteorological data to predict fut...
+      
+      </description>
+    </item>
     <item>
       <title>How can AI help journalists?</title>
       <link>https://tomjs.org/post/cheapshot/</link>
@@ -30,7 +66,7 @@
       <guid>https://tomjs.org/post/covidgraphreflections/</guid>
       <description>
       
-      Once again, I’m late to the discussion on this. In fairness I am doing my Finals and as long as they are still hanging ...
+       Once again, I’m late to the discussion on this. In fairness I am doing my Finals and as long as they are still hanging ...
       
       </description>
     </item>
@@ -42,7 +78,7 @@
       <guid>https://tomjs.org/post/percapitacoivd/</guid>
       <description>
       
-      I’m a bit late to the discussion on Per Capita Graphs and their relation to Covid-19 deaths. Nevertheless, it’s been on...
+       I’m a bit late to the discussion on Per Capita Graphs and their relation to Covid-19 deaths. Nevertheless, it’s been on...
       
       </description>
     </item>
@@ -54,7 +90,7 @@
       <guid>https://tomjs.org/post/minibudgetreflections/</guid>
       <description>
       
-      Preliminary thoughts on the Mini-BudgetThis is an R Markdown document. Markdown is a simple formatting syntax for auth...
+       Preliminary thoughts on the Mini-Budget This is an R Markdown document. Markdown is a simple formatting syntax for auth...
       
       </description>
     </item>

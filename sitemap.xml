@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tomjs.org/projects/electionforecast/</loc>
+  </url>
+  
+  <url>
     <loc>https://tomjs.org/projects/covidtracker/</loc>
   </url>
   
@@ -28,16 +32,31 @@
   
   <url>
     <loc>https://tomjs.org/</loc>
-    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/cheapshot/</loc>
-    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+    <loc>https://tomjs.org/post/facebookads/</loc>
+    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tomjs.org/post/</loc>
+    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/electionforecast/</loc>
+    <lastmod>2020-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/introtomodelling/</loc>
+    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/cheapshot/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
