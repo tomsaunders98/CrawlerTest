@@ -32,16 +32,21 @@
   
   <url>
     <loc>https://tomjs.org/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tomjs.org/post/facebookads/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tomjs.org/post/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/ratingtheforecasts/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/facebookads/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,6 +73,14 @@
   <url>
     <loc>https://tomjs.org/post/percapitacoivd/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/data/538forecast/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tomjs.org/post/data/economistforecast/output/site_data/readme/</loc>
   </url>
   
   <url>

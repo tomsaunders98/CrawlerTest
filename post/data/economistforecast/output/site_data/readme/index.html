@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="blog,tom,saunders,tomandthenews"><meta name="description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="us-2020-potus-model (output) This .zip folder contains the output data from The Economist&rsquo;s 2020 presidential election forecast. What follows is a brief description of all the files and labels for the variables within them.
+state_polls.csv: A file containing all the state polls fielded so far.
+   Column Description     state The state the poll is from   pollster The pollster that conducted the poll   sponsor If a poll was conducted for a media or other organization, the name of the organization, otherwise empty   start_date The first fielding date for the poll   end_date The last fielding date for the poll   entry_date_time_et The time the poll was entered into our model, in US Eastern Time   number_of_observations The sample size for the poll   population Whether the poll was conducted among registered or likely voters, or all adults   mode Whether the poll was conducted via live interviews over the phone, online or some other method   biden Biden&rsquo;s vote share in the poll   trump Trump&rsquo;s vote share in the poll   biden_margin Biden&rsquo;s vote margin in the poll   other The vote share for third-party candidates, if reported   undecided The share of voters who say they&rsquo;re undecided, if if reported   url The url where you can read the poll   include A dummy variable indicating whether the poll should be included in the model (almost always yes)   note Other notes   biden_two_party and trump_two_party Biden and Trump&rsquo;s share of the two-party vote    national_polls." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tomjs.org/post/data/economistforecast/output/site_data/readme/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="us-2020-potus-model (output) This .zip folder contains the output data from The Economist&rsquo;s 2020 presidential election forecast. What follows is a brief description of all the files and labels for the variables within them.
+state_polls.csv: A file containing all the state polls fielded so far.
+   Column Description     state The state the poll is from   pollster The pollster that conducted the poll   sponsor If a poll was conducted for a media or other organization, the name of the organization, otherwise empty   start_date The first fielding date for the poll   end_date The last fielding date for the poll   entry_date_time_et The time the poll was entered into our model, in US Eastern Time   number_of_observations The sample size for the poll   population Whether the poll was conducted among registered or likely voters, or all adults   mode Whether the poll was conducted via live interviews over the phone, online or some other method   biden Biden&rsquo;s vote share in the poll   trump Trump&rsquo;s vote share in the poll   biden_margin Biden&rsquo;s vote margin in the poll   other The vote share for third-party candidates, if reported   undecided The share of voters who say they&rsquo;re undecided, if if reported   url The url where you can read the poll   include A dummy variable indicating whether the poll should be included in the model (almost always yes)   note Other notes   biden_two_party and trump_two_party Biden and Trump&rsquo;s share of the two-party vote    national_polls."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://tomjs.org/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://tomjs.org/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://tomjs.org/css/all.css" />
+<link rel="stylesheet" href="https://tomjs.org/css/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://tomjs.org/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://tomjs.org/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><link rel="stylesheet" type="text/css" media="screen" href="https://tomjs.org/css/css/custom.css" /><title> | @tomjs</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="https://tomjs.org/">
+      <img src="/img/vitae.jpg" alt="@tomjs">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="https://tomjs.org/">@tomjs</a></h2></div>
+  <div id="title-description"><p id="subtitle">More Words.</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/tomsaunders98"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li><li><a href="https://twitter.com/tomjs"><i title="Twitter" class="icons fab fa-twitter"></i></a></li><li><a href="https://www.linkedin.com/in/tomsaunders98/"><i title="LinkedIn" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:tomandthenews@gmail.com"><i title="Email" class="icons fas fa-envelope"></i></a></li><li><a href="https://tomjs.org/key.txt"><i title="PGP Key" class="icons fas fa-key"></i></a></li><li><a href="https://matrix.to/#/@tomandthenews:matrix.org"><i title="Matrix.org" class="icons fas fa-comments"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about">About</a></li>
+        
+        <li><a href="/projects">My Projects</a></li>
+        
+        <li><a href="/post">All Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="matter">
+<h1 class="title"></h1>
+</div>
+</div>
+<div class="markdown">
+<h1 id="us-2020-potus-model-output">us-2020-potus-model (output)</h1>
+<p>This .zip folder contains the output data from <a href="https://projects.economist.com/us-2020-forecast/president"><em>The Economist&rsquo;s</em> 2020 presidential election forecast</a>. What follows is a brief description of all the files and labels for the variables within them.</p>
+<p><em><code>state_polls.csv</code></em>: A file containing all the state polls fielded so far.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td>The state the poll is from</td>
+</tr>
+<tr>
+<td><code>pollster</code></td>
+<td>The pollster that conducted the poll</td>
+</tr>
+<tr>
+<td><code>sponsor</code></td>
+<td>If a poll was conducted for a media or other organization, the name of the organization, otherwise empty</td>
+</tr>
+<tr>
+<td><code>start_date</code></td>
+<td>The first fielding date for the poll</td>
+</tr>
+<tr>
+<td><code>end_date</code></td>
+<td>The last fielding date for the poll</td>
+</tr>
+<tr>
+<td><code>entry_date_time_et</code></td>
+<td>The time the poll was entered into our model, in US Eastern Time</td>
+</tr>
+<tr>
+<td><code>number_of_observations</code></td>
+<td>The sample size for the poll</td>
+</tr>
+<tr>
+<td><code>population</code></td>
+<td>Whether the poll was conducted among registered or likely voters, or all adults</td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td>Whether the poll was conducted via live interviews over the phone, online or some other method</td>
+</tr>
+<tr>
+<td><code>biden</code></td>
+<td>Biden&rsquo;s vote share in the poll</td>
+</tr>
+<tr>
+<td><code>trump</code></td>
+<td>Trump&rsquo;s vote share in the poll</td>
+</tr>
+<tr>
+<td><code>biden_margin</code></td>
+<td>Biden&rsquo;s vote margin in the poll</td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td>The vote share for third-party candidates, if reported</td>
+</tr>
+<tr>
+<td><code>undecided</code></td>
+<td>The share of voters who say they&rsquo;re undecided, if if reported</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>The url where you can read the poll</td>
+</tr>
+<tr>
+<td><code>include</code></td>
+<td>A dummy variable indicating whether the poll should be included in the model (almost always yes)</td>
+</tr>
+<tr>
+<td><code>note</code></td>
+<td>Other notes</td>
+</tr>
+<tr>
+<td><code>biden_two_party</code> and <code>trump_two_party</code></td>
+<td>Biden and Trump&rsquo;s share of the two-party vote</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>national_polls.csv</code></em>: A file containing all the national polls fielded so far. The columns and descriptions are the same as for the state polls.</p>
+<p><em><code>state_correlation_matrix.csv</code></em>: A file containing the pairwise correlations between simulated state-level Biden vote shares across all of the model&rsquo;s simulations. The column and row names correspond to each state.</p>
+<p><em><code>state_averages_and_predictions_topline.csv</code></em>: A file containing each state&rsquo;s adjusted polling average today and its predicted vote on election day, with confidence intervals and win probabilities.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td>The name of the state</td>
+</tr>
+<tr>
+<td><code>dem_average_low</code></td>
+<td>The lower bound of the uncertainty interval for the Democratic share of the two party vote <em>in polls today</em></td>
+</tr>
+<tr>
+<td><code>dem_average_high</code></td>
+<td>The upper bound of the uncertainty interval for the Democratic share of the two party vote <em>in polls today</em></td>
+</tr>
+<tr>
+<td><code>dem_average_mean</code></td>
+<td>The average Democratic share of the two party vote <em>in polls today</em></td>
+</tr>
+<tr>
+<td><code>projected_vote_low</code></td>
+<td>The lower bound of the uncertainty interval for the projected Democratic share of the two party vote <em>on election day</em></td>
+</tr>
+<tr>
+<td><code>projected_vote_high</code></td>
+<td>The upper bound of the uncertainty interval for the projected Democratic share of the two party vote <em>on election day</em></td>
+</tr>
+<tr>
+<td><code>projected_vote_mean</code></td>
+<td>The average projected Democratic share of the two party vote <em>on election day</em></td>
+</tr>
+<tr>
+<td><code>projected_win_prob</code></td>
+<td>The projected chance the Democratic candidate wins the state</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>The date this forecast was made</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>national_predicted_popular_vote.csv</code></em>: A file containing the model&rsquo;s projected Democratic and Republican shares of the national two-party vote on each day remaining in the campaign.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date</code></td>
+<td>The date for each forecast, from today to November 3rd, 2020</td>
+</tr>
+<tr>
+<td><code>party</code></td>
+<td>Which party&rsquo;s vote share is in this row of data</td>
+</tr>
+<tr>
+<td><code>projected_vote_high</code></td>
+<td>The upper bound of the uncertainty interval for the projected <em>x party</em> share of the national two-party vote <em>on day x</em></td>
+</tr>
+<tr>
+<td><code>projected_vote_low</code></td>
+<td>The lower bound of the uncertainty interval for the projected <em>x party</em> share of the national two-party vote <em>on day x</em></td>
+</tr>
+<tr>
+<td><code>projected_vote_mean</code></td>
+<td>The average projected <em>x party</em> share of the national two-party vote <em>on day x</em></td>
+</tr>
+<tr>
+<td><code>election_day</code></td>
+<td>A dummy variable indicating if the day is election day</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>national_polling_averages_over_time.csv</code></em>: A file containing the model&rsquo;s estimates of the national popular vote <em>if the election were held today</em>, for each day the model ran so far.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date</code></td>
+<td>The date for each forecast, from today to November 3rd, 2020</td>
+</tr>
+<tr>
+<td><code>party</code></td>
+<td>Which party&rsquo;s vote share is in this row of data</td>
+</tr>
+<tr>
+<td><code>poll_average_high</code></td>
+<td>The upper bound of the uncertainty interval for the estimated <em>x party</em> share of the national two-party vote <em>if the election were held today</em></td>
+</tr>
+<tr>
+<td><code>poll_average_low</code></td>
+<td>The lower bound of the uncertainty interval for the estimated <em>x party</em> share of the national two-party vote <em>if the election were held today</em></td>
+</tr>
+<tr>
+<td><code>poll_average_mean</code></td>
+<td>The average estimated <em>x party</em> share of the national two-party vote <em>if the election were held today</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><code>national_ec_popvote_topline.csv</code></em>: A file containing information about the topline electoral college and popular vote predictions for the latest day the model ran.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mean_dem_ev</code></td>
+<td>The average projected Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>median_dem_ev</code></td>
+<td>The median projected Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>mode_dem_ev</code></td>
+<td>The modal projected Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>upper_90_dem_ev</code></td>
+<td>The upper bound of the 95% uncertainty interval for the possible Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>lower_90_dem_ev</code></td>
+<td>The lower bound of the 95% uncertainty interval for the possible Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>lower_60_dem_ev</code></td>
+<td>The lower bound of the 60% uncertainty interval for the possible Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>lower_60_dem_ev</code></td>
+<td>The lower bound of the 60% uncertainty interval for the possible Democratic number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>dem_win_prob</code></td>
+<td>The probability of the Democratic candidate winning 270 or more electoral votes</td>
+</tr>
+<tr>
+<td><code>rep_win_prob</code></td>
+<td>The probability of the Republican candidate winning 270 or more electoral votes</td>
+</tr>
+<tr>
+<td><code>mean_dem_vote</code></td>
+<td>The average projected share of the national two-party vote going to the Democratic candidate on election day</td>
+</tr>
+<tr>
+<td><code>median_dem_vote</code></td>
+<td>The median projected share of the national two-party vote going to the Democratic candidate on election day</td>
+</tr>
+<tr>
+<td><code>mode_dem_vote</code></td>
+<td>The modal projected share of the national two-party vote going to the Democratic candidate on election day</td>
+</tr>
+<tr>
+<td><code>upper_90_dem_vote</code></td>
+<td>The upper bound of the 95% uncertainty interval for the possible Democratic share of the two-party vote on election day</td>
+</tr>
+<tr>
+<td><code>lower_90_dem_vote</code></td>
+<td>The lower bound of the 95% uncertainty interval for the possible Democratic share of the two-party vote on election day</td>
+</tr>
+<tr>
+<td><code>upper_60_dem_vote</code></td>
+<td>The upper bound of the 60% uncertainty interval for the possible Democratic share of the two-party vote on election day</td>
+</tr>
+<tr>
+<td><code>lower_60_dem_vote</code></td>
+<td>The lower bound of the 60% uncertainty interval for the possible Democratic share of the two-party vote on election day</td>
+</tr>
+<tr>
+<td><code>dem_vote_win_prob</code></td>
+<td>The probability of the Democratic candidate winning the two-party popular vote</td>
+</tr>
+<tr>
+<td><code>rep_vote_win_prob</code></td>
+<td>The probability of the Republican candidate winning the two-party popular vote</td>
+</tr>
+<tr>
+<td><code>dem_popvote_dem_ec</code></td>
+<td>The probability of the Democratic candidate winning the popular vote and winning the electoral college</td>
+</tr>
+<tr>
+<td><code>dem_popvote_rep_ec</code></td>
+<td>The probability of the Democratic candidate winning the popular vote and losing the electoral college</td>
+</tr>
+<tr>
+<td><code>rep_popvote_rep_ec</code></td>
+<td>The probability of the Republican candidate winning the popular vote and winning the electoral college</td>
+</tr>
+<tr>
+<td><code>rep_popvote_dem_ec</code></td>
+<td>The probability of the Republican candidate winning the popular vote and losing the electoral college</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>The date this forecast was made on</td>
+</tr>
+<tr>
+<td><code>dem_poll_average_low</code></td>
+<td>The lower bound of the uncertainty interval for the estimated Democratic share of the national two-party vote <em>if the election were held today</em></td>
+</tr>
+<tr>
+<td><code>dem_poll_average_high</code></td>
+<td>The upper bound of the uncertainty interval for the estimated Democratic</td>
+</tr>
+<tr>
+<td>share of the national two-party vote <em>if the election were held today</em></td>
+<td></td>
+</tr>
+<tr>
+<td><code>dem_poll_average_mean</code></td>
+<td>The average estimated Democratic share of the national two-party vote <em>if the election were held today</em>&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>electoral_college_votes_over_time.csv</code></em>: A file containing the model&rsquo;s projected Democratic and Republican estimated electoral-vote tallies for each day the model ran so far.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date</code></td>
+<td>The date of the model run that produced the row&rsquo;s predictions</td>
+</tr>
+<tr>
+<td><code>party</code></td>
+<td>Which party&rsquo;s electoral vote tally is in this row of data</td>
+</tr>
+<tr>
+<td><code>lower_95_ev</code></td>
+<td>The lower bound of the 95% uncertainty interval for the possible <em>x party</em> number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>lower_60_ev</code></td>
+<td>The lower bound of the 60% uncertainty interval for the possible <em>x party</em> number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>median_ev</code></td>
+<td>The median of the estimated possible electoral-vote outcomes for <em>x party</em></td>
+</tr>
+<tr>
+<td><code>upper_60_ev</code></td>
+<td>The upper bound of the 60% uncertainty interval for the possible <em>x party</em> number of electoral votes on election day in our simulations</td>
+</tr>
+<tr>
+<td><code>upper_95_ev</code></td>
+<td>The upper bound of the 95% uncertainty interval for the possible <em>x party</em> number of electoral votes on election day in our simulations</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>electoral_college_simulations.csv</code></em>: A file containing our model&rsquo;s most recent simulations for what could happen on election day.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>draw</code></td>
+<td>The simulation number</td>
+</tr>
+<tr>
+<td><code>dem_ev</code></td>
+<td>The number of votes the Democratic candidate wins in this simulation</td>
+</tr>
+<tr>
+<td><code>natl_pop_vote</code></td>
+<td>The share of the national two-party popular vote the Democratic candidate wins in this simulation</td>
+</tr>
+<tr>
+<td><code>AK....WY</code></td>
+<td>The share of the state-level two-party popular vote the Democratic candidate wins in this simulation, for each state</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>electoral_college_probability_over_time.csv</code></em>: A file containing our model&rsquo;s estimated electoral-college win probabilities for each candidate for each day the model has run so far.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date</code></td>
+<td>The date of the model run</td>
+</tr>
+<tr>
+<td><code>party</code></td>
+<td>Which party&rsquo;s electoral college win probability is in this row</td>
+</tr>
+<tr>
+<td><code>win_prob</code></td>
+<td>The chance that <em>x party</em> wins the electoral college.</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>chance_casting_decisive_vote.csv</code></em>: A file containing a record for each state of how likely a voter in that state is to tip the outcome of the election. Not used in the forecast, but generated for <a href="https://www.economist.com/graphic-detail/2020/08/15/how-americas-electoral-college-favours-white-voters">this piece</a> about the electoral college.</p>
+<h1 id="licence">Licence</h1>
+<p>This software is published by <em><a href="https://www.economist.com">The Economist</a></em> under the <a href="https://opensource.org/licenses/MIT">MIT licence</a>. The data generated by <em>The Economist</em> are available under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>The licences include only the data and the software authored by <em>The Economist</em>, and do not cover any <em>Economist</em> content or third-party data or content made available using the software. More information about licensing, syndication and the copyright of <em>Economist</em> content can be found <a href="https://www.economist.com/rights/">here</a>.</p>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+
+</main><footer>
+
+
+
+</footer>
+</body>
+</html>
