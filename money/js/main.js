@@ -84,7 +84,7 @@ scrollword = scrollheight + "px";
 d3.select('body')
   .style("height", scrollword);
 
-console.log(scrollheight);
+
 
 
 conctop = (scrollheight - $(window).height()/2) + "px";
@@ -103,20 +103,12 @@ d3.select('.title')
 var points = [9,11,15,16,17,22,34];
 var sections = d3.selectAll('.desc');
 $.each(points, function(i, d) {
-  console.log(i);
     if(i > 0){
       elemt = d3.select(sections.nodes()[(i-1)]).node();
-      console.log(elemt);
       mh = elemt.getBoundingClientRect().height;
-      // if (((d+1)*($(window).height()/5) - mh) < oldtop){
-      //   console.log("too big");
-      //     top = oldtop + mh + ($(window).height()/10) + "px";
-      //     console.log(top);
-      // }else{
         top = ((d-1)*($(window).height()/5));
       if (top < oldtop){
         top = oldtop + $(window).height()/20
-        console.log(d);
       }
 
     }else{
@@ -187,7 +179,6 @@ d3.select(window)
       if (sp === true){
         if (ft === true){
           oldno = $(window).scrollTop()/($(window).height()/5);
-          console.log("Oldno" + oldno);
           oldscroll = $(window).scrollTop() + $(window).height();
           ft = false;
         }
@@ -201,7 +192,6 @@ d3.select(window)
       }
       if (sp === false){
         scroll = ($(window).scrollTop()- graphCs*$(window).height())/($(window).height()/5);
-        console.log("Scroll " + scroll); //scroll level
         var df = data.filter(function(d, i){
           return i <= scroll;
         })
@@ -246,7 +236,6 @@ d3.select(window)
 
       }
       if (parseInt(scroll) == 17 & activated1 === false){
-        console.log("test");
         activated1 = true;
         sp = true;
         d3.csv("data/TranbyF09-20.csv",
@@ -258,7 +247,6 @@ d3.select(window)
 
       }
       if (parseInt(scroll) == 19 & activated2 === false){
-        console.log("test");
         activated2 = true;
         sp = true;
         d3.csv("data/FRB-2.csv",
