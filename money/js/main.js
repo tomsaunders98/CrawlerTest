@@ -8,7 +8,7 @@ function BuildLine(){
       height = +svg.attr("height") - margin.top - margin.bottom,
       g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("treasury10year.csv",
+d3.csv("data/treasury10year.csv",
   function(d){
     return { date : d3.timeParse("%d/%m/%Y")(d.date),
              value : d.rate }
@@ -237,7 +237,7 @@ d3.select(window)
       if (parseInt(scroll) == 15 & activated === false){
         activated = true;
         sp = true;
-        d3.csv("TreasuryTransactions1.csv",
+        d3.csv("data/TreasuryTransactions1.csv",
           function(d){
             return { date : d3.timeParse("%d/%m/%Y")(d.date),
                      value : parseFloat(d.value) }
@@ -249,7 +249,7 @@ d3.select(window)
         console.log("test");
         activated1 = true;
         sp = true;
-        d3.csv("TranbyF09-20.csv",
+        d3.csv("data/TranbyF09-20.csv",
           function(d){
             return { date : d3.timeParse("%Y-%m")(d.date),
                      value : parseFloat(d.value) }
@@ -261,7 +261,7 @@ d3.select(window)
         console.log("test");
         activated2 = true;
         sp = true;
-        d3.csv("FRB-2.csv",
+        d3.csv("data/FRB-2.csv",
           function(d){
             return { date : d3.timeParse("%d/%m/%Y")(d.date),
                      value : parseFloat(d.value) }
