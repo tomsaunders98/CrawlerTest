@@ -3,108 +3,85 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tomjs.org/projects/electionforecast/</loc>
+    <loc>/projects/covidtracker/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/covidtracker/</loc>
+    <loc>/projects/marchtreasury/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/twitterstudy/</loc>
+    <loc>/projects/chexit/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/chexit/</loc>
+    <loc>/projects/twitterstudy/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/themonocle/</loc>
+    <loc>/projects/cheapshot/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/cheapshot/</loc>
+    <loc>/projects/biggestrebel/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/biggestrebel/</loc>
+    <loc>/projects/themonocle/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/</loc>
-    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/</loc>
-    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+    <loc>/post/onscrolling/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/ratingtheforecasts/</loc>
-    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/facebookads/</loc>
-    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tomjs.org/post/electionforecast/</loc>
-    <lastmod>2020-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tomjs.org/post/introtomodelling/</loc>
-    <lastmod>2020-08-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tomjs.org/post/cheapshot/</loc>
+    <loc>/post/cheapshot/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/covidgraphreflections/</loc>
+    <loc>/post/covidgraphreflections/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/percapitacoivd/</loc>
+    <loc>/post/percapitacoivd/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/data/538forecast/readme/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/data/economistforecast/output/site_data/readme/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/about/</loc>
+    <loc>/projects/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/categories/</loc>
+    <loc>/post/minibudgetreflections/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/projects/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>https://tomjs.org/post/minibudgetreflections/</loc>
-  </url>
-  
-  <url>
-    <loc>https://tomjs.org/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://tomjs.org/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
