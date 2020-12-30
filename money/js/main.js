@@ -1,5 +1,14 @@
 window.scrollTo(0, 0);
 
+$(document).ready(function(){
+
+
+
+
+});
+
+
+
 function BuildLine() {
   //Declare scrollheight, build svg box
 
@@ -93,6 +102,8 @@ function BuildLine() {
       var oldscroll = 0;
       var activated2 = false;
       var activatef4 = false;
+      var oldtop = 0;
+      var mh;
 
       //1. Calculate document length
       // window length included
@@ -122,26 +133,42 @@ function BuildLine() {
         .style("top", top);
 
       //2. Description Boxes
-      var points = [9, 11, 15, 16, 17, 22, 34];
-      var sections = d3.selectAll('.desc');
-      $.each(points, function(i, d) {
-        if (i > 0) {
-          elemt = d3.select(sections.nodes()[(i - 1)]).node();
-          mh = elemt.getBoundingClientRect().height;
-          top = ((d - 1) * ($(window).height() / 5));
-          if (top < oldtop) {
-            top = oldtop + $(window).height() / 20
-          }
+      var points = [9, 11, 15, 16, 17, 22, 38];
+      graphTL = [15,17];
 
-        } else {
-          top = ((d - 1) * ($(window).height() / 5)) + $(window).height() / 5
-        }
+      var sections = d3.selectAll('.desc');
+      setTimeout(function() {
+      $.each(points, function(i, d) {
+        var count = 0;
+          $.each(graphTL, function(ib, db) {
+            if( d >= db ){
+              count++;
+            }
+
+          });
+          top = d*($(window).height()/5) + $(window).height() / 3 + count*$(window).height();
+
+
+          if (i > 0 ){
+
+              let elem =  document.getElementsByClassName("desc");
+              let rect = elem[i-1].getBoundingClientRect();
+              mh = rect.height;
+
+              if (oldtop + mh >= top){
+                top = oldtop + mh + $(window).height()/10;
+
+              }
+
+
+          }
         oldtop = top;
         top = top + "px";
 
         d3.select(sections.nodes()[i])
           .style("top", top);
       });
+      }, 100);
 
       //3. Colours
       var colours = [9, 11];
@@ -209,7 +236,7 @@ function BuildLine() {
               sp = false;
               ft = true;
               graphCs++;
-              update(data, "10-year US Treasury yeilds, %<sup>1</sup>", df, true);
+              update(data, "10-year US Treasury yeilds, %", df, true);
             }
           }
           if (sp === false) {

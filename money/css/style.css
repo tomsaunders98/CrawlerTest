@@ -32,13 +32,20 @@ body{
   stroke: White;
 }
 .desc{
+  position: absolute;
+  display: block;
+  width: 100%;
+
+}
+.nestdesc{
+  position: relative;
   margin: 0 auto;
   width: 30%;
   background-color: rgba(26,27,30,0.8);
-  position: relative;
   padding: 1%;
   text-align: center;
   font-size: medium;
+
 }
 
 .title{
@@ -106,13 +113,13 @@ C85E2F
 }
 
 body a:hover{
-  color: White;
+  color: #E9DEB5;
 
 
 }
 body a{
   text-decoration: none;
-  color:#E9DEB5;
+  color:#e5e5e5;
 }
 .conc h3{
   text-align: left;
@@ -123,8 +130,7 @@ body a{
 }
 
 @media only screen and (max-width: 688px) {
-  .desc{
-    font-size: small;
+  .nestdesc{
     width: 60%;
   }
 
