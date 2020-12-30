@@ -209,7 +209,7 @@ function BuildLine() {
               sp = false;
               ft = true;
               graphCs++;
-              update(data, "10-year US Treasury yeilds, %", df, true);
+              update(data, "10-year US Treasury yeilds, %<sup>1</sup>", df, true);
             }
           }
           if (sp === false) {

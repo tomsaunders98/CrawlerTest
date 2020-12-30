@@ -38,6 +38,7 @@ body{
   position: relative;
   padding: 1%;
   text-align: center;
+  font-size: medium;
 }
 
 .title{
@@ -92,7 +93,7 @@ C85E2F
 .conc{
   width: 100%;
   position: absolute;
-  font-size: small;
+  font-size: medium;
 
 
 }
