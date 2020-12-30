@@ -120,7 +120,12 @@ body a{
   width: 100%;
   display: block;
   border-bottom: 1px solid;
+}
 
-
+@media only screen and (max-width: 688px) {
+  .desc{
+    font-size: small;
+    width: 60%;
+  }
 
 }
