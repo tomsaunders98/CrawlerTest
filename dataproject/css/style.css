@@ -1,0 +1,145 @@
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ibm-plex-sans-v8-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/ibm-plex-sans-v8-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/ibm-plex-sans-v8-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('fonts/ibm-plex-sans-v8-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans') format('svg');
+  /* Legacy iOS */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #C4DDF2;
+  color: #5B7291;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  stroke: White;
+}
+
+.desc {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.nestdesc {
+  position: relative;
+  margin: 0 auto;
+  width: 30%;
+  background-color: rgba(208, 214, 207, 0.4);
+  padding: 1%;
+  text-align: center;
+  font-size: medium;
+}
+
+.title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  font-size: xx-large;
+}
+
+.subtitle {
+  opacity: 0.8;
+  font-size: large;
+  display: block;
+}
+
+.byline {
+  opacity: 0.5;
+  font-size: medium;
+  display: block;
+}
+
+.axis path, line {
+  stroke: #5B7291;
+  opacity: 1;
+  color: #5B7291;
+}
+
+.axis text {
+  fill: #5B7291;
+  stroke: none !important;
+  opacity: 0.5;
+}
+
+.axis-title {
+  fill: #5B7291;
+  stroke: none !important;
+  opacity: 0.5;
+}
+
+/*
+C85E2F
+384433
+96986D
+ */
+.line {
+  fill: none;
+  stroke: #5B7291;
+  stroke-width: 1.5px;
+}
+
+.line2 {
+  fill: none;
+  stroke: #B58EAD;
+  stroke-width: 1.5px;
+}
+
+.conc {
+  width: 100%;
+  position: absolute;
+  font-size: medium;
+}
+
+.nestedconc {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  padding: 1%;
+  text-align: center;
+}
+
+body a:hover {
+  color: #F1B2AD;
+}
+
+body a {
+  text-decoration: none;
+  color: #67A8C4;
+}
+
+.conc h3 {
+  text-align: left;
+  font-weight: normal;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid;
+}
+
+@media only screen and (max-width: 688px) {
+  .nestdesc {
+    width: 60%;
+  }
+}

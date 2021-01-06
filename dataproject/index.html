@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Matters of the Mind</title>
+  <script type="text/javascript">
+
+  </script>
+  <!-- Load d3.js -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/d3.v4.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href="css/style.css" rel=stylesheet>
+</head>
+
+<body>
+  <!-- Create a div where the graph will take place -->
+  <svg class="box" viewBox="0 0 960 500" width="960" height="500" preserveAspectRatio="xMidYMid meet"></svg>
+  <script type="text/javascript">
+    BuildLine()
+  </script>
+  <div class="title"> Matters of the Mind <span class="subtitle">How Covid-19 has accelerated a mental health crisis across UK universities.</span>
+    <span class="byline">By Thomas Saunders</span>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>Inevitably, as soon as Exeter University opened its doors to students this year coronavirus cases began to spiral upwards on its campus. The cases in halls of residence, which mainly house first-year undergraduate students, reached around
+        <span class="red">140 a day</span> before the scholastic term had even started.
+      </p>
+      <p>Similar mass-spreading events happened at all universities which encouraged students to live on campus. Most students would not be considered particularly vulnerable to the virus but this does not hold for the communities that surround
+        universities.
+      </p>
+
+
+    </div>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>As a result, universities across the country went to great lengths to mitigate the virus’ spread. In most cases, this was a resounding success. In Exeter, the huge increase in virus cases was not replicated in the <span
+          style="color:#B58EAD;">local community</span>.</p>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>However, the measures that universities put in place have severely affected the wellbeing of students, adding to a mental health crisis that was underway well before the pandemic arrived. Even before COVID-19, many universities struggled to
+        manage what has been a steady and continuous rise in demand for mental health services. </p>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>In 2011, just 2,500 UCAS applicants had declared a mental health disability in their application but by 2020 this had increased seven times over to around 17,500. Even then, many students with mental health problems do not declare them.
+        According to a survey by IPPR in 2017, just under half of the students who reported experiencing mental health issues did not disclose it to their university. </p>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>Even though universities have made substantial efforts to raise awareness of mental health issues over the last several years, it is still difficult for students to seek treatment in most universities. According to a survey commissioned by
+        Randstad, waiting times for counselling services can be up to three months due to lack of resources. </p>
+      <p>One student currently in his second year at university said: “Whilst I found the services to be very easy to use with quick response times and easy to access services, the lack of any follow up from the university was not impressive, had I
+        not chosen to see a counsellor professionally I easily could have slipped through the cracks.”</p>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>The Covid-19 pandemic has greatly accelerated this trend, leaving more students in need of help than ever before. For first-year students in halls, the situation is particularly bad. Not only have they seen a more serious rise in Coronavirus
+        cases compared to those that are in live-out accommodation, but they have also struggled to adapt to strict regulations and the total lack of social opportunities.</p>
+      <p>One student at the University of Edinburgh said: “Starting university should have been an exciting new chapter in my life. Instead, I was met by confusing and contradictory rules and poor communication from the university. Add in the hostile
+        environment created by aggressive security and threats of fines for minor offences and, instead of being enjoyable, I found the situation very stressful.”</p>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="nestdesc">
+      <p>In some universities first-year students were grouped into households by floor, meaning that up to 30 people could occupy one ‘household’. Whenever one student in a household contracted the virus all had to isolate, resulting in students
+        self-isolating several times, often for weeks on end.
+      </p>
+      <p>This has severely affected the mental health of students. A report from Public Health Scotland mentioned that “the fear of repeat self-isolation for some students was such that they mentioned self-harm” in interviews.
+      </p>
+    </div>
+  </div>
+
+  <div class="desc">
+    <div class="nestdesc">
+      <p> One student, interviewed for the report, said: “They will tell you “It’s OK, there-there”, but no it’s not there-there, it’s there in my head and it’s just not going out of it. I just feel all alone ... You wake up feeling positive and then
+        by mid-noon you are like, oh my god, the anxiety, it just kicks in.”
+      </p>
+      <p>According to a survey from the National Union of Students, more than half of students have said their mental health has deteriorated or been affected negatively by Covid-19.
+      </p>
+    </div>
+  </div>
+
+  <div class="desc">
+    <div class="nestdesc">
+      <p>So far the government has provided £3 million to fund Student Space, an online platform for students to access mental health and wellbeing resources alongside university-specific resources. The government has also provided £9 million in
+        extra funding to mental health charities, though this is not specifically aimed at students. It remains an open question whether the government has provided enough support to students so far.
+      </p>
+      <p>Larissa Kennedy, NUS National President, said: “It should be no surprise that the majority of students have experienced deteriorating mental health as a result of the pandemic. It is deeply troubling that students are not getting the support
+        that they need, with only 29 per cent of those reporting worse mental health accessing services.”
+      </p>
+    </div>
+  </div>
+
+  <div class="desc">
+    <div class="nestdesc">
+      <p>A growing backlash at the way some universities have handled the crisis has led to a wave of rent strikes across higher education. At least 20 rent strikes have been organised and they are set to be the largest in 40 years.</p>
+    </div>
+  </div>
+
+  <div class="conc">
+    <div class="nestedconc">
+      <h3> The Data </h3>
+      <ol>
+        <li>Data on Covid-19 cases at Exeter University was provided by the <a href="https://www.ons.gov.uk/visualisations/dvc1113/line/datadownload.csv">ONS</a> in collaboration with Exeter University.</li>
+
+        <li>Data on Covid-19 cases in Exeter was provided by the <a href="https://www.ons.gov.uk/visualisations/dvc1113/clustered-bar-vertical/datadownload.csv">ONS</a>.</li>
+
+        <li>Data on student mean depression scores, evaluated using the PHQ-9 test, was provided by the <a href="https://www.covidsocialstudy.org/">University College London COVID-19 Social Study</a>.</li>
+
+        <li>Data on student lonliness, evaluated using the UCLA-3 scale, was also provided by the <a href="https://www.covidsocialstudy.org/">University College London COVID-19 Social Study</a>.</li>
+      </ol>
+      <h3> The Full Text </h3>
+      <ul>
+        <li>The full article which accompanies this piece can also be read <a href="https://raw.githubusercontent.com/tomsaunders98/tomsaunders98.github.io/master/dataproject/fulltext.docx">here</a>.</li>
+        <li>The code for this visualisation can be viewed <a href="https://github.com/tomsaunders98/tomsaunders98.github.io/tree/master/dataproject">here</a>.
+      </ul>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
