@@ -29,3 +29,5 @@ Files
   * Contains html code for visualistion.
 * readme.md
   * This file.
+* **explainer.docx**
+  * Document explaining how the visualisations for both articles were completed.
