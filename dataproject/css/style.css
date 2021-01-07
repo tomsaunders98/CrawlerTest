@@ -100,6 +100,11 @@ C85E2F
   stroke: #5B7291;
   stroke-width: 1.5px;
 }
+.line-r{
+  fill: none;
+  stroke: #B58EAD !important;
+  stroke-width: 1.5px;
+}
 
 .line2 {
   fill: none;
