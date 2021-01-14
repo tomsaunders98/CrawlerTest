@@ -138,25 +138,30 @@ body .top {
   top: 0px;
   left: 100px;
   z-index: 1;
-  height: 50%;
+  height: 100%;
   width: 50%;
 }
 
 .titlebox {
   height: 100%;
   width: 100%;
-  margin: 20% 5%;
+  margin: auto;
   padding: 2%;
-  background: url("../data/tweet.png") no-repeat left;
-  background-size: contain;
   text-align: right;
 }
-@media only screen and (max-width: 768px) {
-  .titlebox{
-    background: none;
-  }
+.titleimage{
+  height:50%;
+  background: url("../data/tweet.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
 }
-
+.titledesc{
+  text-align: right;
+}
+.ttext{
+  height: 50%;
+  text-align: center;
+}
 .conc{
   height: 100%;
   width: 100%;
@@ -170,4 +175,13 @@ body .top {
 .annotation-group {
   font-family: 'Lato', sans-serif;
   color: black;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

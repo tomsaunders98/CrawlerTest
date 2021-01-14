@@ -65,7 +65,7 @@ function BuildLine() {
 
       // Scales
       var x = d3.scaleTime()
-        .domain([new Date(2015, 5, 15), fday])
+        .domain([new Date(2015, 5, 14), fday])
         .range([0, width])
         .clamp(true);
       var y = d3.scaleLinear()
@@ -79,24 +79,17 @@ function BuildLine() {
         })])
         .range([4, 40]);
       var myColor = d3.scaleOrdinal()
-        .domain(["f","d", false, "rt"])
-        .range(["#e22847","#BDC3C7", "#55acee", "#17bf63"]);
+        .domain(["f", "d", false, "rt"])
+        .range(["#e22847", "#BDC3C7", "#55acee", "#17bf63"]);
 
       //Axis
+      g.append("g")
+        .attr("class", "axis axis--x")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x)
+          .ticks(diff / 4)
+          .tickFormat(d3.timeFormat("%y-%m-%d")));
 
-      if (parseInt(window.innerWidth) > 1000){
-        g.append("g")
-          .attr("class", "axis axis--x")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x)
-            .ticks(diff/4)
-            .tickFormat(d3.timeFormat("%Y-%m-%d")));
-      }else{
-        g.append("g")
-          .attr("class", "axis axis--x")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x));
-      }
 
       g.append("g")
         .attr("class", "axis axis--y")
@@ -133,18 +126,18 @@ function BuildLine() {
             title
               .style("display", "initial");
           }
-          if (scroll > bwidth - 2*wwidth){
+          if (scroll > bwidth - 2 * wwidth) {
             end
               .style("display", "initial");
-            opacity =  -1*((scroll - (bwidth-2*wwidth))/(-wwidth)); //min-max normilization for opacity scale
-            if(opacity >= 0){
+            opacity = -1 * ((scroll - (bwidth - 2 * wwidth)) / (-wwidth)); //min-max normilization for opacity scale
+            if (opacity >= 0) {
               end
-              .style("opacity", opacity);
+                .style("opacity", opacity);
             }
           }
-          if (scroll < bwidth - 2*wwidth){
+          if (scroll < bwidth - 2 * wwidth) {
             end
-            .style("display", "none");
+              .style("display", "none");
           }
 
 
@@ -207,6 +200,8 @@ function BuildLine() {
 
       //Tooltip
       var showTooltip = function(d) {
+        tooltip
+          .style("display", "initial")
 
         //Make Circle Brighter
         d3.select(this)
@@ -257,6 +252,10 @@ function BuildLine() {
           .transition()
           .duration(3000)
           .style("opacity", 0)
+        setTimeout(function() {
+          tooltip
+            .style("display", "none")
+        }, 3100);
 
       }
       //Annotations
@@ -267,7 +266,7 @@ function BuildLine() {
             return x(pt(d.x));
           },
           y: function(d) {
-            return y(parseInt(d.y)) ;
+            return y(parseInt(d.y));
           }
         })
         .annotations(annotations)
