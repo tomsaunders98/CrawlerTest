@@ -30,6 +30,20 @@ var annotations = [
 {
   type:d3.annotationCalloutElbow,
   note: {
+      title: "Hover",
+      label: "Hover over a tweet to see it in full"
+  },
+  data:{
+      x: "2015-08-07 09:03:21",
+      y: 1659
+  },
+  color: ["black"],
+  dx:50,
+  dy:-50
+},
+{
+  type:d3.annotationCalloutElbow,
+  note: {
       title: "Colour",
       label: "The colour indicates whether the tweet is a retweet (green), has been deleted (grey) or has been flagged (red).",
       wrap: 300

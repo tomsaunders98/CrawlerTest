@@ -90,6 +90,21 @@ function BuildLine() {
           .ticks(diff)
           .tickFormat(d3.timeFormat("%Y-%m-%d")));
 
+      if (parseInt(window.innerWidth) > 1000){
+
+        g.append("g")
+          .attr("class", "axis axis--x")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x)
+            .ticks(diff)
+            .tickFormat(d3.timeFormat("%Y-%m-%d")));
+      }else{
+        g.append("g")
+          .attr("class", "axis axis--x")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x));
+      }
+
       g.append("g")
         .attr("class", "axis axis--y")
         .call(d3.axisLeft(y));

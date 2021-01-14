@@ -144,7 +144,7 @@ body .top {
 
 .titlebox {
   height: 100%;
-  width: 100%;
+  width: 1000px;
   margin: 20% 5%;
   padding: 2%;
   background: url("../data/tweet.png") no-repeat left;
@@ -156,6 +156,7 @@ body .top {
   width: 100%;
   margin: 20% 5%;
   padding: 2%;
+  display: none;
 }
 .annotation-group {
   font-family: 'Lato', sans-serif;
