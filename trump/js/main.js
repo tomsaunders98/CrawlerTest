@@ -83,20 +83,13 @@ function BuildLine() {
         .range(["#e22847","#BDC3C7", "#55acee", "#17bf63"]);
 
       //Axis
-      g.append("g")
-        .attr("class", "axis axis--x")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x)
-          .ticks(diff)
-          .tickFormat(d3.timeFormat("%Y-%m-%d")));
 
       if (parseInt(window.innerWidth) > 1000){
-
         g.append("g")
           .attr("class", "axis axis--x")
           .attr("transform", "translate(0," + height + ")")
           .call(d3.axisBottom(x)
-            .ticks(diff)
+            .ticks(diff/4)
             .tickFormat(d3.timeFormat("%Y-%m-%d")));
       }else{
         g.append("g")

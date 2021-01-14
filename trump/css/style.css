@@ -144,13 +144,19 @@ body .top {
 
 .titlebox {
   height: 100%;
-  width: 1000px;
+  width: 100%;
   margin: 20% 5%;
   padding: 2%;
   background: url("../data/tweet.png") no-repeat left;
   background-size: contain;
   text-align: right;
 }
+@media only screen and (max-width: 768px) {
+  .titlebox{
+    background: none;
+  }
+}
+
 .conc{
   height: 100%;
   width: 100%;
