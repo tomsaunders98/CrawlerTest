@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.titletext {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 150px;
+  line-height: 150px;
+}
+
+.titledesc {
+  font-family: 'Lato', sans-serif;
+}
+
+.titledesc a {
+  color: black;
+}
+
+body a {
+  color: rgb(27, 149, 224);
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 10px;
+  width: 400px;
+  background-color: white;
+}
+
+body .top {
+  display: block;
+  height: 50px;
+  padding: 5px;
+}
+
+.img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.desc {
+  font-size: small;
+}
+
+.text {
+  padding: 10px 0px;
+  font-size: medium;
+}
+
+.title {
+  font-size: small;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: small;
+  color: rgb(136, 153, 166);
+}
+
+.box {
+  width: 100%;
+  overflow: scroll;
+  z-index: -1;
+}
+
+.date {
+  color: rgb(136, 153, 166);
+  font-size: small;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+
+.no {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.fav, .rts {
+  color: black;
+  font-weight: bold;
+}
+
+.numbers {
+  font-size: small;
+  color: rgb(136, 153, 166);
+}
+
+.subtweet {
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.subtitle {
+  display: block;
+  float: left;
+  font-size: small;
+  color: rgb(136, 153, 166);
+}
+
+.abovetext {
+  color: #5b7083;
+  font-size: small;
+  font-weight: bold;
+}
+
+.link {
+  color: rgb(136, 153, 166);
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  z-index: 1;
+  height: 50%;
+  width: 50%;
+}
+
+.titlebox {
+  height: 100%;
+  width: 100%;
+  margin: 20% 5%;
+  padding: 2%;
+  background: url("../data/tweet.png") no-repeat left;
+  background-size: contain;
+  text-align: right;
+}
+.conc{
+  height: 100%;
+  width: 100%;
+  margin: 20% 5%;
+  padding: 2%;
+}
+.annotation-group {
+  font-family: 'Lato', sans-serif;
+  color: black;
+}

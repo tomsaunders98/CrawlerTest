@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Trump Tweets</title>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="js/d3.v4.min.js"></script>
+  <script type="text/javascript" src="js/d3-annotation.min.js"></script>
+  <script type="text/javascript" src="js/annotations.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/dmz1ece.css">
+</head>
+<body>
+  <div class="box" id="test">
+    <div class="wrapper titlewrapper">
+      <div class="titlebox">
+        <span class="titletext">Trump <br />Tweets</span>
+        <span class="titledesc">
+          <p><span class="dl"></span> tweets archived, analysed.</p>
+          <p>By <a href="https://tomjs.org">Tom Saunders</a></p>
+        </span>
+      </div>
+    </div>
+    <div class="tooltip">
+      <div class="top">
+        <img src="data/trump.jpg" class="img" />
+        <div class="desc">
+          <span class="title">Donald Trump</span><br />
+          <span class="sub">@realdonaldtrump</span>
+        </div>
+      </div>
+      <div class="text">
+      </div>
+      <div class="date">
+        <a class="link">
+          <span class="hour">
+          </span> ·
+          <span class="day">
+          </span></a> ·
+        <span class="device">
+        </span>
+      </div>
+      <div class="numbers">
+        <span class="no">
+          <span class="rts"></span> Retweet
+        </span>
+        <span class="no">
+          <span class="fav"></span> Likes
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper endwrapper">
+    <div class="conc">
+      This was built using d3js. The data was taken from <a href="https://www.thetrumparchive.com/">The Trump Twitter Archive</a>
+      <ul>
+        <li>Did I miss something/is there a bug? Send me a message on twitter <a href="https://twitter.com/tomjs">@tomjs</a>.</li>
+        <li>See the code on GitHub <a herf="https://github.com/tomsaunders98/tomsaunders98.github.io/tree/master/trump">here</a>.</li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    BuildLine()
+  </script>
+</body>
+</html>
