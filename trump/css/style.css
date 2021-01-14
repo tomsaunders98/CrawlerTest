@@ -162,6 +162,9 @@ body .top {
   width: 100%;
   margin: 20% 5%;
   padding: 2%;
+
+}
+.endwrapper{
   display: none;
 }
 .annotation-group {
