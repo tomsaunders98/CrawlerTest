@@ -30,11 +30,30 @@ function BuildLine() {
       d.device = d.device;
       return d;
     },
-    function(data) { //filter by date range
+    function(data) {
+      //remove self-rt
+      function selfrt(text, rt){
+        if (rt === true){
+            regex = /^RT /g,
+            text = text.replace(regex, '');
+            regex = /^@(\w{1,15}):(.*)/i,
+            matches = text.match(regex);
+            if (matches === null){
+              return false;
+            }
+            if (matches[1] == "realDonaldTrump"){
+              return true;
+            }else{
+              return false;
+            }
+        }else{
+          return false;
+        }
+      }
+       //filter by date range + remove Trump self rts + Twitter Ads
       data = data.filter(function(d) {
-        return d.date >= launchcamp & d.date < fday;
+        return d.date >= launchcamp & d.date < fday & selfrt(d.text,d.rt) === false & d.device != "Twitter Ads";
       })
-      console.log(data)
       // Add number of tweets
       d3.select(".dl")
         .html(data.length)
@@ -168,7 +187,7 @@ function BuildLine() {
 
         //convert links
         regex = /(https?:\/\/[^\s]+)/g,
-          replace = '<a href="$1">$1</a>';
+          replace = '<a href="https://web.archive.org/web/$1">$1</a>';
         tweet = tweet.replace(regex, replace);
 
         //Replace Tags
@@ -223,15 +242,15 @@ function BuildLine() {
         tooltext
           .html(textToTweet(d.text, d.rt))
         favs
-          .html(d.fav)
+          .html(Number(d.fav).toLocaleString('en'))
         rts
-          .html(d.rtno)
+          .html(Number(d.rtno).toLocaleString('en'))
         hour
           .html(hours)
         day
           .html(days)
         link
-          .attr("href", "https://twitter.com/realdonaltrump/status/" + d.id)
+          .attr("href", "https://web.archive.org/web/https://twitter.com/realdonaltrump/status/" + d.id)
         device
           .html(d.device)
         tooltip
