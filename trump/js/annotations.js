@@ -843,7 +843,7 @@ var annotations = [
   type:d3.annotationCalloutElbow,
   note: {
       title: "Taxes",
-      label: "The New York Times unconvers Trump's tax returns.",
+      label: "The New York Times uncovers Trump's tax returns.",
   },
   data:{
       x: "2020-09-28 14:29:36",
