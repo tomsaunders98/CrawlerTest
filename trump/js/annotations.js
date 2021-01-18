@@ -35,8 +35,8 @@ var annotations = [
       label: "Hover over a tweet to see it in full"
   },
   data:{
-      x: "2015-06-22 23:18:28",
-      y: 234
+      x: "2015-06-24 23:40:47",
+      y: 227
   },
   color: ["black"],
   dx:50,
@@ -50,8 +50,8 @@ var annotations = [
       wrap: 300
   },
   data:{
-      x: "2015-06-24 20:52:20",
-      y: 327
+      x: "2015-06-28 13:51:01",
+      y: 423
   },
   color: ["black"],
   dx:50,
