@@ -12,7 +12,7 @@ var annotations = [
     },
     color: ["black"],
     dx:50,
-    dy:upheight
+    dy:-50
 },
 {
   type:d3.annotationCalloutElbow,
@@ -21,12 +21,12 @@ var annotations = [
       label: "The size of the circle indicates the number of retweets"
   },
   data:{
-      x: "2015-06-20 23:48:43",
-      y: 262
+      x: "2015-07-06 01:02:14",
+      y: 423
   },
   color: ["black"],
   dx:50,
-  dy:upheight
+  dy:-50
 },
 {
   type:d3.annotationCalloutElbow,
@@ -40,7 +40,7 @@ var annotations = [
   },
   color: ["black"],
   dx:50,
-  dy:upheight
+  dy:-50
 },
 {
   type:d3.annotationCalloutElbow,
@@ -55,7 +55,7 @@ var annotations = [
   },
   color: ["black"],
   dx:50,
-  dy:upheight
+  dy:-50
 },
 {
   type:d3.annotationCalloutElbow,
