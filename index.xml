@@ -6,7 +6,7 @@
     <description>Recent content on tomjs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="http://tomjs.org/index.xml" rel="self" type="application/rss+xml" />
     
@@ -103,6 +103,18 @@
       <description>
       
       https://github.com/tomsaunders98/BiggestRebellion
+      
+      </description>
+    </item>
+    <item>
+      <title>On Scrolling</title>
+      <link>http://tomjs.org/post/onscrolling/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/post/onscrolling/</guid>
+      <description>
+      
+        Recently, I finished coding a dataviz project which went into detail about the Treasury market in March. The idea behi...
       
       </description>
     </item>
