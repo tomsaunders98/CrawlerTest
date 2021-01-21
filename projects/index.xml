@@ -2,19 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on @tomjs</title>
-    <link>/projects/</link>
-    <description>Recent content in Projects on </description>
+    <link>http://tomjs.org/projects/</link>
+    <description>Recent content in Projects on tomjs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tomjs.org/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>A Covid-19 Test Tracker</title>
-      <link>/projects/covidtracker/</link>
+      <title>2020 Election Forecast</title>
+      <link>http://tomjs.org/projects/electionforecast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/covidtracker/</guid>
+      <guid>http://tomjs.org/projects/electionforecast/</guid>
+      <description>
+      
+      https://tomjs.org/Forecast2020/
+      
+      </description>
+    </item>
+    <item>
+      <title>A Covid-19 Test Tracker</title>
+      <link>http://tomjs.org/projects/covidtracker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/projects/covidtracker/</guid>
       <description>
       
       https://github.com/tomsaunders98/CovidTests
@@ -22,35 +34,11 @@
       </description>
     </item>
     <item>
-      <title>MarchTreasury</title>
-      <link>/projects/marchtreasury/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/marchtreasury/</guid>
-      <description>
-      
-      https://tomjs.org/money/
-      
-      </description>
-    </item>
-    <item>
-      <title>Chexit.co.uk</title>
-      <link>/projects/chexit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/chexit/</guid>
-      <description>
-      
-      https://chexit.co.uk/
-      
-      </description>
-    </item>
-    <item>
       <title>A Study of Twitter</title>
-      <link>/projects/twitterstudy/</link>
+      <link>http://tomjs.org/projects/twitterstudy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/twitterstudy/</guid>
+      <guid>http://tomjs.org/projects/twitterstudy/</guid>
       <description>
       
       https://twitter.chexit.co.uk/
@@ -58,11 +46,47 @@
       </description>
     </item>
     <item>
-      <title>CheapShot</title>
-      <link>/projects/cheapshot/</link>
+      <title>Trump Tweets</title>
+      <link>http://tomjs.org/projects/trumptweets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/cheapshot/</guid>
+      <guid>http://tomjs.org/projects/trumptweets/</guid>
+      <description>
+      
+      https:/tomjs.org/trump
+      
+      </description>
+    </item>
+    <item>
+      <title>Chexit.co.uk</title>
+      <link>http://tomjs.org/projects/chexit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/projects/chexit/</guid>
+      <description>
+      
+      https://chexit.co.uk/
+      
+      </description>
+    </item>
+    <item>
+      <title>The Monocle</title>
+      <link>http://tomjs.org/projects/themonocle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/projects/themonocle/</guid>
+      <description>
+      
+      https:/themonoclenow.com
+      
+      </description>
+    </item>
+    <item>
+      <title>CheapShot</title>
+      <link>http://tomjs.org/projects/cheapshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tomjs.org/projects/cheapshot/</guid>
       <description>
       
       https://github.com/tomsaunders98/CheapShot
@@ -71,25 +95,13 @@
     </item>
     <item>
       <title>Biggest Rebels</title>
-      <link>/projects/biggestrebel/</link>
+      <link>http://tomjs.org/projects/biggestrebel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/biggestrebel/</guid>
+      <guid>http://tomjs.org/projects/biggestrebel/</guid>
       <description>
       
       https://github.com/tomsaunders98/BiggestRebellion
-      
-      </description>
-    </item>
-    <item>
-      <title>The Monocle</title>
-      <link>/projects/themonocle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/themonocle/</guid>
-      <description>
-      
-      https:/themonoclenow.com
       
       </description>
     </item>

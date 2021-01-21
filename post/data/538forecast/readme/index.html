@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.74.3" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="blog,tom,saunders,tomandthenews"><meta name="description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="election-forecasts-2020 This file contains links to the data behind our 2020 General Election Forecast.
+Presidential Forecast presidential_national_toplines_2020.csv contains the final national topline on each day. It includes the following columns:
+   Column Description     cycle The election cycle (2020)   branch The kind of race this forecast pertains to (presidential)   model The model type (polls-plus is the only model we are running for the 2020 presidential race)   modeldate Date of the model run   candidate_inc Name of the incumbent   candidate_chal Name of the challenger   candidate_3rd Name of the third-party candidate   ecwin_inc Chance that the incumbent will win a majority of the electoral votes   ecwin_chal Chance that the challenger will win a majority of the electoral votes   ecwin_3rd Chance that the third-party candidate will win a majority of the electoral votes   ec_nomajority Chance that no candidate will win a majority of the electoral votes   popwin_inc Chance that the incumbent will win the popular vote   popwin_chal Chance that the challenger will win the popular vote   popwin_3rd Chance that a third-party candidate will win the popular vote   ev_inc, ev_inc_lo, ev_inc_hi Forecasted number of Electoral College votes for the incumbent, including the upper and lower bounds of an 80% confidence interval   ev_chal, ev_chal_lo, ev_chal_hi Forecasted number of Electoral College votes for the challenger, including the upper and lower bounds of an 80% confidence interval   ev_3rd, ev_3rd_lo, ev_3rd_hi Forecasted number of Electoral College votes for the third-party candidate, including the upper and lower bounds of an 80% confidence interval   national_voteshare_inc, national_voteshare_inc_lo, national_voteshare_inc_hi Forecasted national vote share for the incumbent, including the upper and lower bounds of an 80% confidence interval   national_voteshare_chal, national_voteshare_chal_lo, national_voteshare_chal_hi Forecasted national vote share for the challenger, including the upper and lower bounds of an 80% confidence interval   national_voteshare_3rd, national_voteshare_3rd_lo, national_voteshare_3rd_hi Forecasted national vote share for the third-party candidate, including the upper and lower bounds of an 80% confidence interval   nat_voteshare_other, nat_voteshare_other_lo, nat_voteshare_other_hi Forecasted national voter turnout based on past turnout, estimates of population growth, polls about whether voters are more or less enthusiastic about the election than usual and other factors in each state." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://tomjs.org/post/data/538forecast/readme/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="election-forecasts-2020 This file contains links to the data behind our 2020 General Election Forecast.
+Presidential Forecast presidential_national_toplines_2020.csv contains the final national topline on each day. It includes the following columns:
+   Column Description     cycle The election cycle (2020)   branch The kind of race this forecast pertains to (presidential)   model The model type (polls-plus is the only model we are running for the 2020 presidential race)   modeldate Date of the model run   candidate_inc Name of the incumbent   candidate_chal Name of the challenger   candidate_3rd Name of the third-party candidate   ecwin_inc Chance that the incumbent will win a majority of the electoral votes   ecwin_chal Chance that the challenger will win a majority of the electoral votes   ecwin_3rd Chance that the third-party candidate will win a majority of the electoral votes   ec_nomajority Chance that no candidate will win a majority of the electoral votes   popwin_inc Chance that the incumbent will win the popular vote   popwin_chal Chance that the challenger will win the popular vote   popwin_3rd Chance that a third-party candidate will win the popular vote   ev_inc, ev_inc_lo, ev_inc_hi Forecasted number of Electoral College votes for the incumbent, including the upper and lower bounds of an 80% confidence interval   ev_chal, ev_chal_lo, ev_chal_hi Forecasted number of Electoral College votes for the challenger, including the upper and lower bounds of an 80% confidence interval   ev_3rd, ev_3rd_lo, ev_3rd_hi Forecasted number of Electoral College votes for the third-party candidate, including the upper and lower bounds of an 80% confidence interval   national_voteshare_inc, national_voteshare_inc_lo, national_voteshare_inc_hi Forecasted national vote share for the incumbent, including the upper and lower bounds of an 80% confidence interval   national_voteshare_chal, national_voteshare_chal_lo, national_voteshare_chal_hi Forecasted national vote share for the challenger, including the upper and lower bounds of an 80% confidence interval   national_voteshare_3rd, national_voteshare_3rd_lo, national_voteshare_3rd_hi Forecasted national vote share for the third-party candidate, including the upper and lower bounds of an 80% confidence interval   nat_voteshare_other, nat_voteshare_other_lo, nat_voteshare_other_hi Forecasted national voter turnout based on past turnout, estimates of population growth, polls about whether voters are more or less enthusiastic about the election than usual and other factors in each state."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://tomjs.orgcss/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://tomjs.orgcss/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://tomjs.orgcss/all.css" />
+<link rel="stylesheet" href="http://tomjs.orgcss/katex.min.css" crossorigin="anonymous">
+  <script defer src="http://tomjs.orgjs/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="http://tomjs.orgjs/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><link rel="stylesheet" type="text/css" media="screen" href="http://tomjs.orgcss/css/custom.css" /><title> | @tomjs</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="http://tomjs.org">
+      <img src="/img/vitae.jpg" alt="@tomjs">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="http://tomjs.org">@tomjs</a></h2></div>
+  <div id="title-description"><p id="subtitle">More Words.</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/tomsaunders98"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li><li><a href="https://twitter.com/tomjs"><i title="Twitter" class="icons fab fa-twitter"></i></a></li><li><a href="https://www.linkedin.com/in/tomsaunders98/"><i title="LinkedIn" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:tomandthenews@gmail.com"><i title="Email" class="icons fas fa-envelope"></i></a></li><li><a href="https://tomjs.org/key.txt"><i title="PGP Key" class="icons fas fa-key"></i></a></li><li><a href="https://matrix.to/#/@tomandthenews:matrix.org"><i title="Matrix.org" class="icons fas fa-comments"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about">About</a></li>
+        
+        <li><a href="/projects">My Projects</a></li>
+        
+        <li><a href="/post">All Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="matter">
+<h1 class="title"></h1>
+</div>
+</div>
+<div class="markdown">
+<h1 id="election-forecasts-2020">election-forecasts-2020</h1>
+<p>This file contains links to the data behind our <a href="https://projects.fivethirtyeight.com/2020-election-forecast/">2020 General Election Forecast</a>.</p>
+<h2 id="presidential-forecast">Presidential Forecast</h2>
+<p><code>presidential_national_toplines_2020.csv</code> contains the final national topline on each day. It includes the following columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cycle</code></td>
+<td>The election cycle (2020)</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>The kind of race this forecast pertains to (presidential)</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>The model type (polls-plus is the only model we are running for the 2020 presidential race)</td>
+</tr>
+<tr>
+<td><code>modeldate</code></td>
+<td>Date of the model run</td>
+</tr>
+<tr>
+<td><code>candidate_inc</code></td>
+<td>Name of the incumbent</td>
+</tr>
+<tr>
+<td><code>candidate_chal</code></td>
+<td>Name of the challenger</td>
+</tr>
+<tr>
+<td><code>candidate_3rd</code></td>
+<td>Name of the third-party candidate</td>
+</tr>
+<tr>
+<td><code>ecwin_inc</code></td>
+<td>Chance that the incumbent will win a majority of the electoral votes</td>
+</tr>
+<tr>
+<td><code>ecwin_chal</code></td>
+<td>Chance that the challenger will win a majority of the electoral votes</td>
+</tr>
+<tr>
+<td><code>ecwin_3rd</code></td>
+<td>Chance that the third-party candidate will win a majority of the electoral votes</td>
+</tr>
+<tr>
+<td><code>ec_nomajority</code></td>
+<td>Chance that no candidate will win a majority of the electoral votes</td>
+</tr>
+<tr>
+<td><code>popwin_inc</code></td>
+<td>Chance that the incumbent will win the popular vote</td>
+</tr>
+<tr>
+<td><code>popwin_chal</code></td>
+<td>Chance that the challenger will win the popular vote</td>
+</tr>
+<tr>
+<td><code>popwin_3rd</code></td>
+<td>Chance that a third-party candidate will win the popular vote</td>
+</tr>
+<tr>
+<td><code>ev_inc</code>, <code>ev_inc_lo</code>, <code>ev_inc_hi</code></td>
+<td>Forecasted number of Electoral College votes for the incumbent, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>ev_chal</code>, <code>ev_chal_lo</code>, <code>ev_chal_hi</code></td>
+<td>Forecasted number of Electoral College votes for the challenger, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>ev_3rd</code>, <code>ev_3rd_lo</code>, <code>ev_3rd_hi</code></td>
+<td>Forecasted number of Electoral College votes for the third-party candidate, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>national_voteshare_inc</code>, <code>national_voteshare_inc_lo</code>, <code>national_voteshare_inc_hi</code></td>
+<td>Forecasted national vote share for the incumbent, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>national_voteshare_chal</code>, <code>national_voteshare_chal_lo</code>, <code>national_voteshare_chal_hi</code></td>
+<td>Forecasted national vote share for the challenger, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>national_voteshare_3rd</code>, <code>national_voteshare_3rd_lo</code>, <code>national_voteshare_3rd_hi</code></td>
+<td>Forecasted national vote share for the third-party candidate, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>nat_voteshare_other</code>, <code>nat_voteshare_other_lo</code>, <code>nat_voteshare_other_hi</code></td>
+<td>Forecasted national voter turnout based on past turnout, estimates of population growth, polls about whether voters are more or less enthusiastic about the election than usual and other factors in each state. Includes the upper and lower bounds of an 80% confidence interval.</td>
+</tr>
+<tr>
+<td><code>national_turnout</code>, <code>national_turnout_lo</code>, <code>national_turnout_hi</code></td>
+<td>Forecasted national voter turnout based on past turnout, estimates of population growth, polls about whether voters are more or less enthusiastic about the election than usual and other factors in each state. Includes the upper and lower bounds of an 80% confidence interval. Turnout estimates are only available on model runs after Sept. 5, 2020.</td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td>Date and time the simulations were run</td>
+</tr>
+<tr>
+<td><code>simulations</code></td>
+<td>Number of simulations run</td>
+</tr>
+</tbody>
+</table>
+<p><code>presidential_state_toplines_2020.csv</code> contains the final state-level toplines on each day. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state</code></td>
+<td>Name of the state</td>
+</tr>
+<tr>
+<td><code>tipping</code></td>
+<td>Tipping-point chance, the chance the state will deliver the decisive vote in the Electoral College</td>
+</tr>
+<tr>
+<td><code>vpi</code></td>
+<td>Voter power index, the relative likelihood that an individual voter in the state will determine the Electoral College winner</td>
+</tr>
+<tr>
+<td><code>winstate_inc</code></td>
+<td>Chance the incumbent will win the state</td>
+</tr>
+<tr>
+<td><code>winstate_chal</code></td>
+<td>Chance the challenger will win the state</td>
+</tr>
+<tr>
+<td><code>winstate_3rd</code></td>
+<td>Chance the third-party candidate will win the state</td>
+</tr>
+<tr>
+<td><code>voteshare_inc</code>, <code>voteshare_inc_lo</code>, <code>voteshare_inc_hi</code></td>
+<td>Forecasted vote share for the incumbent, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>voteshare_chal</code>, <code>voteshare_chal_lo</code>, <code>voteshare_chal_hi</code></td>
+<td>Forecasted vote share for the challenger, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>voteshare_3rd</code>, <code>voteshare_3rd_lo</code>, <code>voteshare_3rd_hi</code></td>
+<td>Forecasted vote share for the third-party candidate, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>voteshare_other</code>, <code>voteshare_other_lo</code>, <code>voteshare_other_hi</code></td>
+<td>Forecasted vote share for other candidates, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>margin</code>, <code>margin_lo</code>, <code>margin_hi</code></td>
+<td>Forecasted margin for the incumbent, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>win_EC_if_win_state_inc</code></td>
+<td>Chance that the incumbent will win the Electoral College if they win this state</td>
+</tr>
+<tr>
+<td><code>win_EC_if_win_state_chal</code></td>
+<td>Chance that the challenger will win the Electoral College if they win this state</td>
+</tr>
+<tr>
+<td><code>win_state_if_win_EC_inc</code></td>
+<td>Chance that the incumbent will win this state if they win the Electoral College</td>
+</tr>
+<tr>
+<td><code>win_state_if_win_EC_chal</code></td>
+<td>Chance that the challenger will win this state if they win the Electoral College</td>
+</tr>
+<tr>
+<td><code>state_turnout</code>, <code>state_turnout_hi</code>, <code>state_turnout_lo</code></td>
+<td>Forecasted state-level voter turnout based on past turnout, estimates of population growth, polls about whether voters are more or less enthusiastic about the election than usual and other factors in each state. Includes the upper and lower bounds of an 80% confidence interval. Turnout estimates are only available on model runs after Sept. 5, 2020.</td>
+</tr>
+</tbody>
+</table>
+<p><code>presidential_polls_2020.csv</code> contains an entry for each poll, and how much the model adjusts each poll for the house and trendline adjustments. Additional poll and poling average data can be found in our <a href="https://github.com/fivethirtyeight/data/tree/master/polls">polls dataset</a>. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>candidate_name</code></td>
+<td>The candidate for this answer choice</td>
+</tr>
+<tr>
+<td><code>startdate</code></td>
+<td>The first day interviews were conducted for this poll</td>
+</tr>
+<tr>
+<td><code>enddate</code></td>
+<td>The last day interviews were conducted for this poll</td>
+</tr>
+<tr>
+<td><code>pollster</code></td>
+<td>The name of the pollster</td>
+</tr>
+<tr>
+<td><code>samplesize</code></td>
+<td>The size of the sample</td>
+</tr>
+<tr>
+<td><code>population</code></td>
+<td>Whether the population interviewed was adults, registered voters, or likely voters</td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>A relative weight that describes how much this poll factors into the forecast relative to other polls</td>
+</tr>
+<tr>
+<td><code>influence</code></td>
+<td>A relative weight that describes how much this poll factors into today&rsquo;s the forecast (similar to &ldquo;weight&rdquo;, but also takes into account how old the poll is)</td>
+</tr>
+<tr>
+<td><code>pct</code></td>
+<td>Voteshare for this candidate in this poll</td>
+</tr>
+<tr>
+<td><code>house_adjusted_pct</code></td>
+<td>Voteshare in this poll after applying the house adjustment</td>
+</tr>
+<tr>
+<td><code>trend_and_house_adjusted_pct</code></td>
+<td>Voteshare in this poll after applying both house and trendline adjustments</td>
+</tr>
+<tr>
+<td><code>tracking</code></td>
+<td>Whether or not the poll sample overlaps with other polls in our database</td>
+</tr>
+<tr>
+<td><code>poll_id</code></td>
+<td>Unique identifier for a poll</td>
+</tr>
+<tr>
+<td><code>question_id</code></td>
+<td>Unique identifier for a question</td>
+</tr>
+</tbody>
+</table>
+<p><code>presidential_poll_averages_2020.csv</code> contains the polling averages for each day. Additional poll and poling average data can be found in our <a href="https://github.com/fivethirtyeight/data/tree/master/polls">polls dataset</a>. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pct_estimate</td>
+<td>Polling average for the candidate listed in <code>candidate_name</code> on <code>modeldate</code></td>
+</tr>
+<tr>
+<td>pct_trend_adjusted</td>
+<td>Trendline adjusted polling average for the candidate listed in <code>candidate_name</code> on <code>modeldate</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>presidential_ev_probabilities_2020.csv</code> contains the forecasted chances of every possible Electoral College outcome. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>evprob_inc</code></td>
+<td>Chance that the incumbent wins <code>total_ev</code> electoral votes</td>
+</tr>
+<tr>
+<td><code>evprob_chal</code></td>
+<td>Chance that the challenger wins <code>total_ev</code> electoral votes</td>
+</tr>
+<tr>
+<td><code>evprob_3rd</code></td>
+<td>Chance that the third-party candidate wins <code>total_ev</code> electoral votes</td>
+</tr>
+<tr>
+<td><code>total_ev</code></td>
+<td>Number of electoral votes in question</td>
+</tr>
+</tbody>
+</table>
+<p><code>presidential_scenario_analysis_2020.csv</code> contains the forecasted chances of various possible election outcome scenarios. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scenario_id</code></td>
+<td>A unique identifier for each scenario</td>
+</tr>
+<tr>
+<td><code>probability</code></td>
+<td>The forecasted chance that the scenario will happen</td>
+</tr>
+<tr>
+<td><code>scenario_description</code></td>
+<td>A description of the scenario in question</td>
+</tr>
+</tbody>
+</table>
+<p><code>economic_index.csv</code> contains economic indicators that serve as inputs to the forecast. For more information on these indicators, see <a href="https://fivethirtyeight.com/features/measuring-the-effect-of-the-economy-on-elections/">this post</a>. The economic indexes were collected from the <a href="https://fred.stlouisfed.org/series/DSPIC96">Federal Reserve Bank Of St. Louis</a> and the stock prices data from <a href="https://finance.yahoo.com/">Yahoo Finance</a>. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>indicator</code></td>
+<td>Name of the economic indicator</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>What that indicator helps measure</td>
+</tr>
+<tr>
+<td><code>current_zscore</code></td>
+<td>Number of standard deviations from the previous 2-year average for the current value of the indicator</td>
+</tr>
+<tr>
+<td><code>projected_zscore</code></td>
+<td>Number of standard deviations from the previous 2-year average for the projected value of the indicator on Election Day</td>
+</tr>
+<tr>
+<td><code>projected_hi</code></td>
+<td>Upper bound of an 80% confidence interval for <code>projected_zscore</code></td>
+</tr>
+<tr>
+<td><code>projected_lo</code></td>
+<td>Lower bound of an 80% confidence interval for <code>projected_zscore</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>forecast_steps.csv</code> contains the every intermediate step in calculating the chance of winning from the polling average in a particular state. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>step_no</code></td>
+<td>A value from 1 - 10 where 1 is the starting point (Polling average) and 10 is the final step (Chance of winning).</td>
+</tr>
+<tr>
+<td><code>value_inc</code>, <code>value_chal</code>, <code>value_3rd</code></td>
+<td>The value of that step for the incumbent, challenger, and third party candidate</td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>The weight of the component when blending with either a regression or economic fundamentals</td>
+</tr>
+<tr>
+<td><code>step_description</code></td>
+<td>A description of each step in the process of calculating the chance of winning</td>
+</tr>
+</tbody>
+</table>
+<p><code>ec_vs_popvote.csv</code> contains the the probability that each candidate will win the electoral college conditional on the popular vote outcome. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lower_bin_text</code>, <code>upper_bin_text</code></td>
+<td>A range of popular vote outcomes</td>
+</tr>
+<tr>
+<td><code>total_ev_inc </code>, <code>ev_inc_lo</code>, <code>ev_inc_hi</code></td>
+<td>Forecasted number of Electoral College votes for the incumbent conditional on the popular vote outcome falling between <code>lower_bin_text</code> and <code>upper_bin_text</code>, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>total_ev_chal </code>, <code>ev_chal_lo</code>, <code>ev_chal_hi</code></td>
+<td>Forecasted number of Electoral College votes for the challenger conditional on the popular vote outcome falling between <code>lower_bin_text</code> and <code>upper_bin_text</code>, including the upper and lower bounds of an 80% confidence interval</td>
+</tr>
+<tr>
+<td><code>ecwin_inc</code>, <code>ecwin_chal</code>, <code>ecwin_3rd</code>, <code>ecwin_nomajority</code></td>
+<td>Chance that the incumbent, challenger, 3rd party candidate or nobody will win a majority of electoral votes, conditional on the popular vote outcome falling between <code>lower_bin_text</code> and <code>upper_bin_text</code></td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td>Number of simulations in which this outcome is present</td>
+</tr>
+</tbody>
+</table>
+<h2 id="congressional-forecasts">Congressional Forecasts</h2>
+<p><code>senate_national_toplines_2020.csv</code> contains the final national Senate topline on each day. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>branch</code></td>
+<td>Kind of race this forecast pertains to (senate)</td>
+</tr>
+<tr>
+<td><code>expression</code></td>
+<td>Model type (lite, classic, or deluxe)</td>
+</tr>
+<tr>
+<td><code>forecastdate</code></td>
+<td>Date the model was run</td>
+</tr>
+<tr>
+<td><code>chamber_Dparty</code>, <code>chamber_Rparty</code></td>
+<td>Chance that each party (D or R) win control of the Senate</td>
+</tr>
+<tr>
+<td><code>mean_seats_Dparty</code>, <code>mean_seats_Rparty</code></td>
+<td>Average forecasted number of seats that each party (D or R) hold in the Senate</td>
+</tr>
+<tr>
+<td><code>median_seats_Dparty</code>, <code>median_seats_Rparty</code></td>
+<td>Median forecasted number of seats that each party (D or R) hold in the Senate</td>
+</tr>
+<tr>
+<td><code>p90_seats_Dparty</code>,<code>p90_seats_Rparty</code>,<code>p10_seats_Dparty</code>,<code>p10_seats_Rparty</code></td>
+<td>90th and 10th percentile for the number of seats for each party (D or R)</td>
+</tr>
+<tr>
+<td><code>total_national_turnout</code>, <code>p90_total_national_turnout</code>, <code>p10_total_national_turnout</code></td>
+<td>Average, 90th percentile, and 10th percentile of national turnout in states with Senate races</td>
+</tr>
+<tr>
+<td><code>popvote_margin</code>, <code>p90_popvote_margin</code>, <code>p10_popvote_margin</code></td>
+<td>Average, 90th percentile, and 10th percentile of popular vote margin (with positive being more Democratic and negative more Republican) in Senate races</td>
+</tr>
+</tbody>
+</table>
+<p><code>house_national_toplines_2020.csv</code> contains the final national House topline on each day. This sheet contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>statesmajority_Dparty</code>, <code>statesmajority_Rparty</code>, <code>statesmajority_noparty</code></td>
+<td>Forecasted chances that each party, or no party, controls a majority of state delegations in the house</td>
+</tr>
+<tr>
+<td><code>delegations_Dparty</code>, <code>delegations_Rparty</code>, <code>delegations_nomajority</code></td>
+<td>How many state delegations each party is expected to control in the house</td>
+</tr>
+</tbody>
+</table>
+<p><code>senate_state_toplines_2020.csv</code> and <code>house_district_toplines_2020.csv</code> contain the final state-level Senate toplines and district-level House toplines on each day. These sheets contain the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>seat</code></td>
+<td>Senate seat corresponding to this row, in the format XX-S#, where XX is the state postal code and # is the class of the seat being contested</td>
+</tr>
+<tr>
+<td><code>name_D1</code>, <code>name_D2</code>,<code>name_D3</code>,<code>name_D4</code>,<code>name_R1</code>, <code>name_R2</code>,<code>name_R3</code>,<code>name_R4</code></td>
+<td>Name of the top four Democrats (D) and Republicans (R) in contention for the seat. Blanks indicate that there are no Democrats or Republicans other than those listed in contention for the seat.</td>
+</tr>
+<tr>
+<td><code>name_I1</code></td>
+<td>Name of the top candidate on the ballot that is neither a Democrat nor a Republican.</td>
+</tr>
+<tr>
+<td><code>name_O1</code></td>
+<td>Placeholder for model chances for all candidates other than those named in the previous columns.</td>
+</tr>
+<tr>
+<td><code>winner_XX</code>, where <code>XX</code> is one of <code>D1</code>,<code>D2</code>,<code>D3</code>,<code>D4</code>,<code>R1</code>,<code>R2</code>,<code>R3</code>,<code>R4</code>,<code>I1</code>,<code>O1</code></td>
+<td>Chance that the correspondingly named candidate wins the seat</td>
+</tr>
+<tr>
+<td><code>winner_Dparty</code>, <code>winner_Rparty</code></td>
+<td>Chance that the corresponding party, regardless of candidate, wins the seat</td>
+</tr>
+<tr>
+<td><code>tipping</code></td>
+<td>Chance that this seat is the tipping point for control of the Senate</td>
+</tr>
+<tr>
+<td><code>vpi</code></td>
+<td>Voter power index: the relative likelihood that an individual vote in the state will determine control of the Senate chamber</td>
+</tr>
+<tr>
+<td><code>mean_predicted_turnout</code>, <code>p90_simmed_turnout_gross</code>,<code>p10_simmed_turnout_gross</code></td>
+<td>Average, 90th percentile, and 10th percentile of state turnout in this Senate race</td>
+</tr>
+<tr>
+<td><code>voteshare_mean_XX</code>, where <code>XX</code> is one of <code>D1</code>,<code>D2</code>,<code>D3</code>,<code>D4</code>,<code>R1</code>,<code>R2</code>,<code>R3</code>,<code>R4</code>,<code>I1</code>,<code>O1</code></td>
+<td>Average voteshare for the correspondingly named candidate</td>
+</tr>
+<tr>
+<td><code>p90_voteshare_simmed_XX</code>, <code>p10_voteshare_simmed_XX</code>, where <code>XX</code> is one of <code>D1</code>,<code>D2</code>,<code>D3</code>,<code>D4</code>,<code>R1</code>,<code>R2</code>,<code>R3</code>,<code>R4</code>,<code>I1</code>,<code>O1</code></td>
+<td>90th and 10th percentile for voteshare for the correspondingly named candidate</td>
+</tr>
+<tr>
+<td><code>pvi_538</code></td>
+<td>Partisan voter index for the state, as calculated by 538</td>
+</tr>
+<tr>
+<td><code>vep</code></td>
+<td>Total voting eligible population in the state</td>
+</tr>
+<tr>
+<td><code>mean_netpartymargin</code>, <code>p90_netpartymargin</code>, <code>p10_netpartymargin</code></td>
+<td>Mean, 90th, and 10th percentiles of the margin between Democrats and Republicans, where positive numbers are more Democratic and negative numbers are more Republican</td>
+</tr>
+<tr>
+<td><code>won_runoff_XX</code>, <code>lost_runoff_XX</code>, where <code>XX</code> is one of <code>D1</code>,<code>D2</code>,<code>D3</code>,<code>D4</code>,<code>R1</code>,<code>R2</code>,<code>R3</code>,<code>R4</code>,<code>I1</code>,<code>O1</code></td>
+<td>Where applicable, chance the the correspondingly named candidate wins in a runoff for the seat</td>
+</tr>
+</tbody>
+</table>
+<p><code>senate_seat_distribution.csv</code> and <code>house_seat_distribution.csv</code> contain the probablity of each distribution of seats for each day&rsquo;s forecast run. These sheets contain the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>seatsheld</code></td>
+<td>number of seats held by each party</td>
+</tr>
+<tr>
+<td><code>seatprob_Dparty</code></td>
+<td>probability that Democrats will hold <code>seatsheld</code> number of seats</td>
+</tr>
+<tr>
+<td><code>seatprob_Rparty</code></td>
+<td>probability that Republicans will hold <code>seatsheld</code> number of seats</td>
+</tr>
+</tbody>
+</table>
+<p><code>senate_seat_distribution.csv</code> also contains the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chamber_Dparty</code></td>
+<td>probability that each party will hold 50 seats and Democrats will control the Senate</td>
+</tr>
+<tr>
+<td><code>chamber_Rparty</code></td>
+<td>probability that each party will hold 50 seats and Republicans will control the Senate</td>
+</tr>
+</tbody>
+</table>
+<p><code>senate_fundamentals.csv</code> and <code>house_fundamentals.csv</code> contain the fundamentals for each senate and house race. These sheets contain the following additional columns:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>component_no</code></td>
+<td>Number from 1 to 11 corresponding with each <code>component_name</code></td>
+</tr>
+<tr>
+<td><code>component_name</code></td>
+<td>One of the following values <code>Incumbency</code>,<code>District partisanship</code>,<code>Incumbent's margin in last election</code>,<code>Generic ballot</code>,<code>Fundraising</code>,<code>Incumbent's voting record in Congress</code>,<code>Challenger experience</code>,<code>Scandals</code>,<code>Top-two primary margin</code>,<code>Number of candidates</code>,<code>Total</code></td>
+</tr>
+<tr>
+<td><code>component_impact</code></td>
+<td>The impact each component has on the chances of winning</td>
+</tr>
+<tr>
+<td><code>component_narrative</code></td>
+<td>Narrative explanation of that component for a particular race</td>
+</tr>
+<tr>
+<td><code>genre</code></td>
+<td>Number of Democrats and Republicans running in a race. For example, <code>DR</code> means that there are one Democrat and one Republican in the race, while <code>DDR</code> means there are two Democrats and one Republican in the race</td>
+</tr>
+<tr>
+<td><code>candidateA</code>, <code>candidateB</code></td>
+<td>Full names of the first and second candidates in the race</td>
+</tr>
+<tr>
+<td><code>shortnmA</code>, <code>shortnmB</code></td>
+<td>Last names of the first and second candidates in the race</td>
+</tr>
+</tbody>
+</table>
+<p><code>senate_steps.csv</code> and <code>house_steps.csv</code> contain intermediate calculation steps performed in calculating the chance of winning from the polling average in a particular state.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>displaystep</code></td>
+<td>A value from 1-4 indicating the order in which each calculation step is performed</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>A description of each step</td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td>Forecasted margin in this step for <code>candidateA</code> - <code>candidateB</code></td>
+</tr>
+<tr>
+<td><code>lite_weight</code>, <code>classic_weight</code>, <code>deluxe_weight</code></td>
+<td>Relatively how much of each forecast that is derived from each component during the calculation of this step</td>
+</tr>
+</tbody>
+</table>
+<p><code>joint_probabilities.csv</code> contains the probabilities of each possible combination of Democratic or Republican control of the Senate, House and Presidency</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>expression</code></td>
+<td><code>_lite</code>, <code>_classic</code> or <code>_deluxe</code></td>
+</tr>
+<tr>
+<td><code>DsenateDhouseDpotus</code>, <code>DsenateRhouseDpotus</code>, <code>RsenateDhouseDpotus</code>, <code>RsenateRhouseDpotus</code>, <code>DsenateDhouseRpotus</code> , <code>DsenateRhouseRpotus</code> , <code>RsenateDhouseRpotus</code>, <code>RsenateRhouseRpotus</code></td>
+<td>Probability of each possible outcome for Democratic or Republican control of the Senate, House and Presidency</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+
+</main><footer>
+
+
+
+</footer>
+</body>
+</html>
