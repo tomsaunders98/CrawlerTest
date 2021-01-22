@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on @tomjs</title>
-    <link>http://tomjs.org/post/</link>
+    <link>https://tomjs.org/post/</link>
     <description>Recent content in Posts on tomjs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="http://tomjs.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tomjs.org/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>On Scrolling</title>
-      <link>http://tomjs.org/post/onscrolling/</link>
+      <link>https://tomjs.org/post/onscrolling/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/onscrolling/</guid>
+      <guid>https://tomjs.org/post/onscrolling/</guid>
       <description>
       
         Recently, I finished coding a dataviz project which went into detail about the Treasury market in March. The idea behi...
@@ -24,10 +24,10 @@
     </item>
     <item>
       <title>Rating the 2020 forecasts</title>
-      <link>http://tomjs.org/post/ratingtheforecasts/</link>
+      <link>https://tomjs.org/post/ratingtheforecasts/</link>
       <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/ratingtheforecasts/</guid>
+      <guid>https://tomjs.org/post/ratingtheforecasts/</guid>
       <description>
       
         As of writing this, the election results in some states are still being tabulated. The four days after election night ...
@@ -36,10 +36,10 @@
     </item>
     <item>
       <title>Political Facebook Adverts</title>
-      <link>http://tomjs.org/post/facebookads/</link>
+      <link>https://tomjs.org/post/facebookads/</link>
       <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/facebookads/</guid>
+      <guid>https://tomjs.org/post/facebookads/</guid>
       <description>
       
         Using Facebook’s Ad Library API, I’ve taken a look about what Facebook ads can tell us about the final month of the Re...
@@ -48,10 +48,10 @@
     </item>
     <item>
       <title>I built an Election Forecast</title>
-      <link>http://tomjs.org/post/electionforecast/</link>
+      <link>https://tomjs.org/post/electionforecast/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/electionforecast/</guid>
+      <guid>https://tomjs.org/post/electionforecast/</guid>
       <description>
       
         I have released a forecast for the 2020 presidential election, which has been in the works for a couple of months. Ori...
@@ -60,10 +60,10 @@
     </item>
     <item>
       <title>An Introduction to Election Modelling</title>
-      <link>http://tomjs.org/post/introtomodelling/</link>
+      <link>https://tomjs.org/post/introtomodelling/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/introtomodelling/</guid>
+      <guid>https://tomjs.org/post/introtomodelling/</guid>
       <description>
       
         Introduction Much like weather forecasting is the practice of using current and past meteorological data to predict fu...
@@ -72,10 +72,10 @@
     </item>
     <item>
       <title>How can AI help journalists?</title>
-      <link>http://tomjs.org/post/cheapshot/</link>
+      <link>https://tomjs.org/post/cheapshot/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/cheapshot/</guid>
+      <guid>https://tomjs.org/post/cheapshot/</guid>
       <description>
       
       Journalism is often seen as a largely static discipline and at its core the actual practice of journalism has remained l...
@@ -84,10 +84,10 @@
     </item>
     <item>
       <title>Reflections on the Worst Covid Graph</title>
-      <link>http://tomjs.org/post/covidgraphreflections/</link>
+      <link>https://tomjs.org/post/covidgraphreflections/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/covidgraphreflections/</guid>
+      <guid>https://tomjs.org/post/covidgraphreflections/</guid>
       <description>
       
       Once again, I’m late to the discussion on this. In fairness I am doing my Finals and as long as they are still hanging ...
@@ -96,10 +96,10 @@
     </item>
     <item>
       <title>Per Capita and Covid Deaths Explained</title>
-      <link>http://tomjs.org/post/percapitacoivd/</link>
+      <link>https://tomjs.org/post/percapitacoivd/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/percapitacoivd/</guid>
+      <guid>https://tomjs.org/post/percapitacoivd/</guid>
       <description>
       
       I’m a bit late to the discussion on Per Capita Graphs and their relation to Covid-19 deaths. Nevertheless, it’s been on...
@@ -108,10 +108,10 @@
     </item>
     <item>
       <title></title>
-      <link>http://tomjs.org/post/data/538forecast/readme/</link>
+      <link>https://tomjs.org/post/data/538forecast/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/data/538forecast/readme/</guid>
+      <guid>https://tomjs.org/post/data/538forecast/readme/</guid>
       <description>
       
       election-forecasts-2020 This file contains links to the data behind our 2020 General Election Forecast.
@@ -121,10 +121,10 @@ Presidential For...
     </item>
     <item>
       <title></title>
-      <link>http://tomjs.org/post/data/economistforecast/output/site_data/readme/</link>
+      <link>https://tomjs.org/post/data/economistforecast/output/site_data/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/data/economistforecast/output/site_data/readme/</guid>
+      <guid>https://tomjs.org/post/data/economistforecast/output/site_data/readme/</guid>
       <description>
       
       us-2020-potus-model (output) This .zip folder contains the output data from The Economist’s 2020 presidential elec...
@@ -133,10 +133,10 @@ Presidential For...
     </item>
     <item>
       <title>Rishi Sunak&#39;s Mini-Budget</title>
-      <link>http://tomjs.org/post/minibudgetreflections/</link>
+      <link>https://tomjs.org/post/minibudgetreflections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://tomjs.org/post/minibudgetreflections/</guid>
+      <guid>https://tomjs.org/post/minibudgetreflections/</guid>
       <description>
       
       Preliminary thoughts on the Mini-BudgetThis is an R Markdown document. Markdown is a simple formatting syntax for auth...
