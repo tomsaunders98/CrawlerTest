@@ -1,0 +1,50 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;900&family=Rubik:wght@600&display=swap"); */
+
+::selection {
+  background-color: #e33a11;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #e33a11;
+  color: white;
+}
+
+body {
+  color: #000000;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  color: #e33a11;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #e33a11;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+}
+
+.i {
+  color: #e33a11;
+}
