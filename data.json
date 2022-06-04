@@ -1,0 +1,215 @@
+{
+    "articles": [
+        {
+            "title": "Universal Credit and the impact on 'red wall' seats ",
+            "img": "example.png",
+            "desc": "The £20-a-week cut to universal credit, which will take effect on Wednesday, the day of Boris Johnson’s keynote party conference speech, is due to come down hardest on scores of “red wall” seats he won at the last election, analysis by i has found. <br>More than one in five of the population in some of the areas newly held by the Conservatives are claiming benefits. They will lose more than £1,000 a year when the increase ends, 18 months after it was first introduced.",
+            "project" : "https://inews.co.uk/news/universal-credit-tory-red-wall-1222126",
+            "code" : "https://github.com/tomsaunders98/portfoliocode/tree/master/UC",
+            "date" : "Oct 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title" : "Russian misinformation",
+            "img" : "Russian_disinfo.jpg",
+            "desc" : "I used the Twitter API along with Selenium to identify Russian embassy accounts that were spreading misinformation, despite the same tweets being deleted from other accounts.<br>I then used Selenium to identify a large number of embassy accounts that were not labelled as government-affiliated organisations, in violation of Twitter’s own policy on labelling accounts.",
+            "project" : "https://inews.co.uk/news/world/twitter-russian-propaganda-circulating-weeks-war-ukraine-1516272",
+            "date" : "March 2022",
+            "lang" : "Python R Gephi",
+            "for_i" : "The i"
+        },
+        {
+            "title" : "Record number of NHS staff quit",
+            "img" : "exodus_splash.jpg",
+            "desc" : "I broke the story that a record number of NHS staff had quit during the pandemic, despite many staff staying on during the first few months of the pandemic.<br>I used R to analyse the data and spoke to multiple NHS staff members about the difficulties they faced during the pandemic and why some had chosen to quit. ",
+            "project" : "https://inews.co.uk/news/health/nhs-staff-quit-record-numbers-ptsd-covid-pandemic-trauma-1387115?ito=twitter_share_article-top",
+            "date" : "January 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title" : "Immensa Labs",
+            "img" : "immensa.png",
+            "desc" : "I used exclusive UKHSA data provided to me by an academic to detect which areas had been worst affected by the Immensa testing lab scandal.<br>From there I used routine Covid-19 data to demonstrate how the most affected local authorities had seen a massive rise in Covid-19 cases in the wake of the scandal which was not replicated elsewhere in the country. ",
+            "project" : "https://inews.co.uk/news/health/covid-cases-positive-test-results-south-west-england-immensa-lab-errors-1272830",
+            "date" : "October 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title" : "How Le Pen won in the majority Muslim island of Mayotte",
+            "img" : "mayotte_spread.png",
+            "desc" : "While analysing the commune-level returns from the first round of the French presidential election I discovered that Marine Le Pen's biggest win was in the overseas department of Mayotte, an island which is 98 per cent Muslim. <br> I then spoke to people in Mayotte to discover why Le Pen had become so popular in the island despite her Islamophobic history.",
+            "date" : "April 2022",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Batley and Spen by-election: Facebook",
+            "img": "batley.png",
+            "desc": "Labour has spent more on Facebook advertising for the Batley and Spen by-election than in any of the previous three by-elections in England. As Sir Keir Starmer prepares for what could be a transformative by-election for his leadership he has ensured that as much of Labour’s resources are focused on Batley and Spen as possible. ",
+            "project" : "https://inews.co.uk/news/politics/batley-and-spen-by-election-facebook-adverts-spending-labour-tories-vote-1079397",
+            "code" : "https://github.com/tomsaunders98/portfoliocode/tree/master/BatleyFacebookAds",
+            "date" : "June 2021",
+            "lang" : "R Python",
+            "for_i" : "The i"
+        },
+        {
+            "title": "How IR35 tax changes fuelled the lorry driver crisis ",
+            "img": "lorry.png",
+            "desc": "A change to the tax code – rather than Brexit or the pandemic – has prompted truck drivers to leave the industry in huge numbers, i analysis shows.",
+            "project" : "https://inews.co.uk/news/hgv-driver-shortage-tax-change-ir35-lorry-crisis-uk-europe-1239313",
+            "date" : "October 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Fuel shortage? ",
+            "img": "fuel.png",
+            "desc": "Throughout the petrol supply crisis, deliveries to filling stations barely fell as massive levels of panic buying were the leading cause of fuel shortages, i analysis of fuel data reveals.<br>In the run-up to the fuel shortage, deliveries did fall in England although only marginally.<br>At the start of September, fuel deliveries fell by around 200 litres per filling station on average",
+            "project" : "https://inews.co.uk/news/fuel-shortage-figures-petrol-station-deliveries-panic-buying-crisis-explained-1237349",
+            "date" : "October 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Migrant crisis - Nominated for DRUM award, Best Investigation",
+            "img": "dingy.png",
+            "desc": "It was the darkest day of the English Channel migration crisis, when at least 27 people including a pregnant woman and three children drowned as they tried to reach the UK.<br>Now i has pieced together the search and rescue attempts that took place on 24 November by analysing more than 20,000 individual ship and aircraft movements between Dover and Calais on that fateful day.",
+            "project" : "https://inews.co.uk/news/english-channel-migrants-dinghy-tragedy-border-force-calsi-dover-coastguard-rescue-france-uk-1334976",
+            "date" : "December 2021",
+            "lang" : "R QGIS",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Deleted: NHS APP",
+            "img": "deleted.jpg",
+            "desc": "The public’s use of the NHS Covid app has fallen sharply since the summer ‘pingdemic,’ i analysis shows, sparking concerns that there is no longer the infrastructure in place to help slow a potential surge in cases of the new Omicron variant.<br>Analysis of NHS data shows that the number of people ‘pinged’ by the Covid app in England has fallen dramatically since July, despite infection rates remaining at high levels.",
+            "project" : "https://inews.co.uk/news/health/omicron-variant-nhs-covid-19-app-pings-fall-sharply-since-summer-despite-high-covid-infection-rate-1331700",
+            "date" : "December 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Care Home Cliff Edge",
+            "img": "care_home_cliff_edge.jpg",
+            "desc": "Nearly 32,000 care home staff were still completely unvaccinated by the end of last month, with a ban on unjabbed workers entering care homes set to come into force on Thursday.<br>Tens of thousands of employees are now facing the sack ahead of the new law.<br>It bans those who are unvaccinated, or are partially vaccinated, from care homes for the elderly and for young adults.",
+            "project" : "https://inews.co.uk/news/mandatory-covid-jabs-32000-unvaccinated-care-home-workers-facing-sack-new-rules-1292464",
+            "date" : "November 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Two-tier pandemic",
+            "img": "two_tier.png",
+            "desc": "Covid-19 cases are falling among almost every age group in England, apart from school children and their parents’ generation.<br>The rise in cases among school children is so pronounced that it has essentially created two separate levels of Covid-19, with one cohort exposed to transmission among the unvaccinated young, and the other continuing to see cases at a low level. ",
+            "project" : "https://inews.co.uk/news/education/covid-cases-schools-two-tier-pandemic-children-1236187",
+            "date" : "October 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title": "Covid booster jabs",
+            "img": "vacmap.png",
+            "desc": "A postcode lottery of vaccination centre locations could be a key reason that the Covid booster jab drive has failed to reach the height of the first round of vaccination, i analysis has found.<br>There are more than 2,500 vaccination centres across England offering jabs according to data from NHS England. However, many of the places offering vaccines are chemists which are located in cities and larger vaccination centres are also often found in built-up areas.",
+            "project" : "https://inews.co.uk/news/covid-booster-jabs-slow-rollout-impacted-vaccination-centre-locations-1275471",
+            "date" : "November 2021",
+            "lang" : "R",
+            "for_i" : "The i"
+        },
+        {
+            "title" : "Civil service jobs rising faster in London than anywhere else",
+            "img" : "civil_reg.png",
+            "desc" : "I collated a detailed dataset of the location of civil service jobs using archived data from Nomisweb, as well as more cent postcode data from the cabinet office which I factored into regions using postcodes.io.<br>Through this, I was able to paint a detailed picture of how civil service jobs had risen in London thanks to the dual crises of Brexit and Covid-19.",
+            "project" : "https://inews.co.uk/news/levelling-up-michael-gove-civil-service-jobs-london-regions-northern-england-yorkshire-1401768",
+            "date" : "Jan 2022",
+            "lang" : "R",
+            "for_i" : "The i"
+        }
+    ],
+    "interactives": [
+        {
+            "title": "Trump's Tweets",
+            "img": "t_tweets.png",
+            "desc": "A graphic display of all of Trump's tweets since his 2016 candidacy announcement to his Twitter suspension, accounting for favourites, retweets, and whether the tweet was later deleted or flagged.<br>The visualisation features a tooltip that dynamically wrangles the base data using RegEx so that it can be rendered in the style of a typical tweet.",
+            "project" : "https://tomjs.org/trump/",
+            "code" : "https://github.com/tomsaunders98/tomsaunders98.github.io/tree/master/trump",
+            "date" : "January 2021",
+            "lang" : "d3js",
+            "for_i" : "Personal"
+        },
+        {
+            "title": "What Happened to the US Treasuries in March? ",
+            "img": "money.png",
+            "desc": "A scrolling narrative to explain in an elegant manner what happened to the US treasury market during the Covid-19 crisis.<br>The scrollytelling framework which underpins this story does not rely on 3rd party libraries but was designed by hand for this project. It was built using a mixture of CSS, jQuery and d3. ",
+            "project" : "hhttps://tomjs.org/money/",
+            "code" : "https://github.com/tomsaunders98/tomsaunders98.github.io/tree/master/money",
+            "date" : "November 2020",
+            "lang" : "d3js",
+            "for_i" : "Personal"
+        },
+        {
+            "title": "A Study of Twitter",
+            "img": "twitter.png",
+            "desc": "I designed this project as a way of charting ‘British political twitter’ while also investigating which voices have the most influence on social media.<br>I used network analysis through Gephi, along with the Twitter API, to uncover the particular communities within political Twitter. I also used Facebook’s Machine Learning library, Fasttext, to analyse the sentiment of each tweet, which I used to chart the divisiveness of particular topics.",
+            "project" : "https://twitter.chexit.co.uk/",
+            "code" : "https://github.com/tomsaunders98/TwitterChexit",
+            "date" : "April 2020",
+            "lang" : "Fasttext (NLP) Gephi Plotly",
+            "for_i" : "Personal"
+        },
+        {
+            "title": "Chexit.co.uk",
+            "img": "chexit.png",
+            "desc": "During the Brexit saga, I designed this database of every MP’s vote on over 50 different Brexit divisions.<br>It was intended as a resource through which anyone could find an easily digestible summary of an MP’s Brexit position.",
+            "project" : "https://chexit.co.uk/",
+            "code" : "https://github.com/tomsaunders98/Chexit",
+            "date" : "September 2019",
+            "lang" : "PHP + MySQL, Ajax",
+            "for_i" : "Personal"
+        },
+        {
+            "title" : "The Local Elections 2022",
+            "img" : "locals.png",
+            "desc":"I tracked the local elections in England, Wales and Scotland and the Northern Ireland Assembly elections.<br>I designed a custom map in QGIS to visualise all council seats + NI Assembly seats and used that on top of Mapbox and Svelte to create an interactive map of all the elections.<br>The tracking was built through a google sheet where the data from each election could be entered. It was then ported to a GitHub repo every 15 minutes through a Github Action where it could then be requested on demand by the Mapbox web app.",
+            "project" : "https://tomjs.org/locals/",
+            "date" : "May 2022",
+            "lang" : "R Svelte Mapbox Github Actions Google Sheeets QGIS",
+            "for_i" : "Personal"
+        }
+
+    ],
+    "trackers" : [
+        {
+            "title": "The i UK Poll Tracker",
+            "img": "polls.png",
+            "desc": "I collaborated with researchers from Manchester University to build the most advanced poll tracker in use by a UK national newspaper.<br>The tracker uses a Bayesian Dirichlet model to estimate the latent voter intention, with confidence intervals, for all major parties up until the latest poll. The model dynamically adjusts for sampling size, the date of the poll and the specific pollster house. ",
+            "project" : "https://inews.co.uk/news/politics/uk-poll-tracker-parties-compared-opinion-polls-general-election-latest-1210173",
+            "code" : "https://github.com/tomsaunders98/PollTracker",
+            "date" : "July 2021",
+            "lang" : "Python R d3js",
+            "for_i" : "The i"
+        },
+        {
+            "title": "2020 US Election Model",
+            "img": "model.png",
+            "desc": "During the first lockdown of the pandemic, I built a state-space model to predict the result of the 2020 election, designed as a STAN implementation of Drew Linzer's 2008 paper on the subject, with correlated priors.<br>The model correctly predicted one less state than The Economist's + 538.",
+            "project" : "https://tomjs.org/Forecast2020/",
+            "code" : "https://github.com/tomsaunders98/2020ElectionModel",
+            "date" : "November 2020",
+            "lang" : "R STAN d3js",
+            "for_i" : "Personal"
+        },
+        {
+            "title" : "UK Approval Poll Tracker",
+            "img" : "approval.png",
+            "desc" : "I designed a tracker for approval polls using Python and d3. Unlike the Westminster intention tracker this tracks the popularity of both Boris Johnson and Keir Starmer across the year.<br>It uses a similar methodology to the voting intention tracker, scraping polls from Wikipedia and then modelling the results in R.",
+            "project" : "https://inews.co.uk/news/politics/uk-poll-latest-opinion-boris-johnson-keir-starmer-popularity-public-1462176",
+            "date" : "February 2022",
+            "lang" : "d3 R Python (Selenium)",
+            "for_i" : "The i"
+         }
+    ]
+
+}
