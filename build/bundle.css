@@ -1,68 +1,204 @@
-html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-	color: #333;
-	margin: 0;
-	padding: 8px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+	border: 0;
+  }
+
+/* Typography
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0;
 }
 
 a {
-	color: rgb(0,100,200);
-	text-decoration: none;
+  color: #1eaedb;
 }
 
 a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
+  color: #0fa0ce;
+  text-decoration: underline;
 }
 
 label {
-	display: block;
+  display: block;
 }
 
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+  color: #ccc;
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
 }
 
 button:disabled {
-	color: #999;
+  color: #999;
 }
 
 button:not(:disabled):active {
-	background-color: #ddd;
+  background-color: #ddd;
 }
 
 button:focus {
-	border-color: #666;
+  border-color: #666;
 }
 
-.artbox.svelte-6tp9sj.svelte-6tp9sj{background-color:var(--bg-colour);color:white;padding:5px;height:100%;overflow:hidden;max-height:100%}.textbox.svelte-6tp9sj.svelte-6tp9sj{background-color:#f2efeb;color:black;padding:5px;height:100%;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%)}.top.svelte-6tp9sj h4.svelte-6tp9sj{display:inline-block}.artbox.svelte-6tp9sj img.svelte-6tp9sj{display:block;margin:0 auto;border-radius:50%;max-height:200px;max-width:200px;height:90%;width:90%;aspect-ratio:1;object-fit:cover}.bottom.svelte-6tp9sj.svelte-6tp9sj{height:60%;text-align:center}.notify.svelte-6tp9sj.svelte-6tp9sj{background-color:white;padding:5px;color:var(--bg-colour);border-radius:10%;width:50px;font-weight:bold;display:inline-block}.notify.svelte-6tp9sj.svelte-6tp9sj:hover{background-color:black;color:white}.top.svelte-6tp9sj.svelte-6tp9sj{height:40%;overflow:hidden}.text_notify.svelte-6tp9sj.svelte-6tp9sj{background-color:white;padding:5px;margin-right:1%;color:black;border-radius:10%;font-weight:bold;display:inline-block;text-align:center;margin-bottom:1%}.text_notify.svelte-6tp9sj.svelte-6tp9sj:hover{background-color:black;color:white;text-align:center}.dates.svelte-6tp9sj.svelte-6tp9sj{font-weight:bold}@media(max-width: 550px){.artbox.svelte-6tp9sj img.svelte-6tp9sj{width:200px;height:200px}}.pink.svelte-6tp9sj.svelte-6tp9sj{--bg-colour:rgba(242, 33, 89, 1)}.blue.svelte-6tp9sj.svelte-6tp9sj{--bg-colour:rgba(9, 106, 191, 1)}.orange.svelte-6tp9sj.svelte-6tp9sj{--bg-colour:rgba(242, 91, 4, 1)}.red.svelte-6tp9sj.svelte-6tp9sj{--bg-colour:rgba(165, 3, 3, 1)}.Immersive-3D-eCommerce-store-for-footwear-fanatics-1-rgba.svelte-6tp9sj.svelte-6tp9sj{color:rgba(242, 33, 89, 1)}.Immersive-3D-eCommerce-store-for-footwear-fanatics-2-rgba.svelte-6tp9sj.svelte-6tp9sj{color:rgba(9, 106, 191, 1)}.Immersive-3D-eCommerce-store-for-footwear-fanatics-3-rgba.svelte-6tp9sj.svelte-6tp9sj{color:rgba(242, 238, 234, 1)}.Immersive-3D-eCommerce-store-for-footwear-fanatics-4-rgba.svelte-6tp9sj.svelte-6tp9sj{color:rgba(242, 91, 4, 1)}.Immersive-3D-eCommerce-store-for-footwear-fanatics-5-rgba.svelte-6tp9sj.svelte-6tp9sj{color:rgba(165, 3, 3, 1)}
-.fa-icon.svelte-1dof0an{display:inline-block;fill:currentColor}.fa-flip-horizontal.svelte-1dof0an{transform:scale(-1, 1)}.fa-flip-vertical.svelte-1dof0an{transform:scale(1, -1)}.fa-spin.svelte-1dof0an{animation:svelte-1dof0an-fa-spin 1s 0s infinite linear}.fa-inverse.svelte-1dof0an{color:#fff}.fa-pulse.svelte-1dof0an{animation:svelte-1dof0an-fa-spin 1s infinite steps(8)}@keyframes svelte-1dof0an-fa-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.autoheight.svelte-1n3vcz3.svelte-1n3vcz3{height:auto}.icons.svelte-1n3vcz3 li.svelte-1n3vcz3{float:left;padding-right:1%;font-size:3rem}.icons.svelte-1n3vcz3.svelte-1n3vcz3{list-style-type:none;margin:0;padding:0}.icons.svelte-1n3vcz3 li a.svelte-1n3vcz3{color:#333}.icons.svelte-1n3vcz3 li a.svelte-1n3vcz3:hover{color:rgb(124, 124, 124)}
-footer.svelte-18yqp2j.svelte-18yqp2j{text-align:center}footer.svelte-18yqp2j h6.svelte-18yqp2j{font-weight:600}.title.svelte-18yqp2j h1.svelte-18yqp2j{text-align:center;font-weight:900 !important}.title.svelte-18yqp2j a.svelte-18yqp2j:hover{color:rgba(242, 33, 89, 1);text-decoration:none}.title.svelte-18yqp2j a.svelte-18yqp2j{color:black}.autoheight.svelte-18yqp2j.svelte-18yqp2j{height:auto;padding:0 0 0 0;word-wrap:break-word}.title.svelte-18yqp2j.svelte-18yqp2j:after{display:inline-block;content:"";width:100%}.container.svelte-18yqp2j.svelte-18yqp2j{width:100%}.top_true.svelte-18yqp2j.svelte-18yqp2j{position:-webkit-sticky;position:sticky;top:0px;background-color:rgba(242, 238, 234, 1);z-index:1}.beyonk-svelte-scrollspy .active a{color:rgba(242, 33, 89, 1) !important}
+/* Color Theme Swatches in Hex */
+.black-and-white-brand-broken-196653-1-hex {
+  color: #6a618c;
+}
+.black-and-white-brand-broken-196653-2-hex {
+  color: #565959;
+}
+.black-and-white-brand-broken-196653-3-hex {
+  color: #818c8c;
+}
+.black-and-white-brand-broken-196653-4-hex {
+  color: #d9d9d9;
+}
+.black-and-white-brand-broken-196653-5-hex {
+  color: #404040;
+}
+
+/* Color Theme Swatches in RGBA */
+.black-and-white-brand-broken-196653-1-rgba {
+  color: rgba(105, 96, 140, 1);
+}
+.black-and-white-brand-broken-196653-2-rgba {
+  color: rgba(86, 89, 89, 1);
+}
+.black-and-white-brand-broken-196653-3-rgba {
+  color: rgba(128, 140, 140, 1);
+}
+.black-and-white-brand-broken-196653-4-rgba {
+  color: rgba(216, 216, 216, 1);
+}
+.black-and-white-brand-broken-196653-5-rgba {
+  color: rgba(63, 63, 63, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.black-and-white-brand-broken-196653-1-hsla {
+  color: hsla(252, 18, 46, 1);
+}
+.black-and-white-brand-broken-196653-2-hsla {
+  color: hsla(180, 1, 34, 1);
+}
+.black-and-white-brand-broken-196653-3-hsla {
+  color: hsla(180, 4, 52, 1);
+}
+.black-and-white-brand-broken-196653-4-hsla {
+  color: hsla(0, 0, 85, 1);
+}
+.black-and-white-brand-broken-196653-5-hsla {
+  color: hsla(0, 0, 25, 1);
+}
+
+/* Color Theme Swatches in Hex */
+.Black-and-White-1-hex {
+  color: #000000;
+}
+.Black-and-White-2-hex {
+  color: #bfbfbf;
+}
+.Black-and-White-3-hex {
+  color: #ffffff;
+}
+.Black-and-White-4-hex {
+  color: #404040;
+}
+.Black-and-White-5-hex {
+  color: #e5e5e5;
+}
+
+/* Color Theme Swatches in RGBA */
+.Black-and-White-1-rgba {
+  color: rgba(0, 0, 0, 1);
+}
+.Black-and-White-2-rgba {
+  color: rgba(191, 191, 191, 1);
+}
+.Black-and-White-3-rgba {
+  color: rgba(255, 255, 255, 1);
+}
+.Black-and-White-4-rgba {
+  color: rgba(63, 63, 63, 1);
+}
+.Black-and-White-5-rgba {
+  color: rgba(228, 228, 228, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Black-and-White-1-hsla {
+  color: hsla(0, 0, 0, 1);
+}
+.Black-and-White-2-hsla {
+  color: hsla(0, 0, 74, 1);
+}
+.Black-and-White-3-hsla {
+  color: hsla(0, 0, 100, 1);
+}
+.Black-and-White-4-hsla {
+  color: hsla(0, 0, 25, 1);
+}
+.Black-and-White-5-hsla {
+  color: hsla(0, 0, 89, 1);
+}
+
+.svelte-1h0f92m.svelte-1h0f92m{box-sizing:border-box}.BY-me-1-1-hex.svelte-1h0f92m.svelte-1h0f92m{color:#030606}.BY-me-1-2-hex.svelte-1h0f92m.svelte-1h0f92m{color:#0e0e0e}.BY-me-1-3-hex.svelte-1h0f92m.svelte-1h0f92m{color:#141414}.BY-me-1-4-hex.svelte-1h0f92m.svelte-1h0f92m{color:#3c3f3f}.BY-me-1-5-hex.svelte-1h0f92m.svelte-1h0f92m{color:#e4e3e3}svg.svelte-1h0f92m.svelte-1h0f92m{height:25px;width:25px;margin-right:5px}svg.svelte-1h0f92m.svelte-1h0f92m:hover{opacity:0.7;cursor:pointer}.iconlist.svelte-1h0f92m.svelte-1h0f92m{display:inline-block}.nolink.svelte-1h0f92m.svelte-1h0f92m{text-decoration:none;color:#000}.nolink.svelte-1h0f92m.svelte-1h0f92m:hover{text-decoration:none;color:#000;cursor:default}.BY-me-1-1-rgba.svelte-1h0f92m.svelte-1h0f92m{color:rgba(3, 5, 5, 1)}.BY-me-1-2-rgba.svelte-1h0f92m.svelte-1h0f92m{color:rgba(14, 14, 14, 1)}.BY-me-1-3-rgba.svelte-1h0f92m.svelte-1h0f92m{color:rgba(19, 19, 19, 1)}.BY-me-1-4-rgba.svelte-1h0f92m.svelte-1h0f92m{color:rgba(59, 63, 63, 1)}.BY-me-1-5-rgba.svelte-1h0f92m.svelte-1h0f92m{color:rgba(228, 226, 226, 1)}.BY-me-1-1-hsla.svelte-1h0f92m.svelte-1h0f92m{color:hsla(180, 33, 1, 1)}.BY-me-1-2-hsla.svelte-1h0f92m.svelte-1h0f92m{color:hsla(0, 0, 5, 1)}.BY-me-1-3-hsla.svelte-1h0f92m.svelte-1h0f92m{color:hsla(0, 0, 7, 1)}.BY-me-1-4-hsla.svelte-1h0f92m.svelte-1h0f92m{color:hsla(180, 2, 24, 1)}.BY-me-1-5-hsla.svelte-1h0f92m.svelte-1h0f92m{color:hsla(0, 1, 89, 1)}.banner_left.svelte-1h0f92m.svelte-1h0f92m{padding:5px 20px}.static-banner_right.svelte-1h0f92m.svelte-1h0f92m{position:fixed;right:10px;top:10px;padding:10px 30px;z-index:3;transition:opacity 1s;background:rgba(255, 255, 255, 0.95)}.i.svelte-1h0f92m.svelte-1h0f92m{color:#d99d8f}.pers.svelte-1h0f92m.svelte-1h0f92m{color:#395941}.sub.svelte-1h0f92m a.svelte-1h0f92m{text-decoration:none}.sub.svelte-1h0f92m a.svelte-1h0f92m:hover{text-decoration:underline}.banner_left.svelte-1h0f92m a.svelte-1h0f92m{text-decoration:none}.banner_left.svelte-1h0f92m a.svelte-1h0f92m:hover{text-decoration:underline}.subtitle.svelte-1h0f92m.svelte-1h0f92m{display:inline-block;margin-right:10px}.full_title.svelte-1h0f92m a.svelte-1h0f92m{color:#000;text-decoration:none}.full_title.svelte-1h0f92m a.svelte-1h0f92m:hover{color:#1eaedb}.full_title.svelte-1h0f92m.svelte-1h0f92m{font-weight:700;font-size:5rem;margin:auto 0;line-height:120px}.subtitle.svelte-1h0f92m a.svelte-1h0f92m{color:#0fa0ce}.subtitle.svelte-1h0f92m a.svelte-1h0f92m:hover{color:#1eaedb}.img_column.svelte-1h0f92m a.svelte-1h0f92m{text-decoration:none}.img_column.svelte-1h0f92m a.svelte-1h0f92m:hover{opacity:0.7;border-bottom:1px solid #0fa0ce}.title.svelte-1h0f92m.svelte-1h0f92m{display:inline-block;font-weight:700}.pretitle.svelte-1h0f92m.svelte-1h0f92m{display:inline-block;margin-right:5px}.break.svelte-1h0f92m.svelte-1h0f92m{font-weight:100}.banner_left.svelte-1h0f92m a.svelte-1h0f92m{text-decoration:none}.container.svelte-1h0f92m.svelte-1h0f92m{text-overflow:ellipsis;overflow:hidden;padding:10px;height:100%;width:100%}.container.svelte-1h0f92m.svelte-1h0f92m:before{content:"";width:100%;height:100%;position:absolute;left:0;top:0;background:linear-gradient(transparent 90%, white)}.internallinks.svelte-1h0f92m.svelte-1h0f92m{display:inline-block;font-size:1.5rem;line-height:1.2;margin:auto 0}.internallinks.svelte-1h0f92m a.svelte-1h0f92m{color:#000;text-decoration:none}.internallinks.svelte-1h0f92m a.svelte-1h0f92m:hover{color:#0fa0ce;text-decoration:none}.sub.svelte-1h0f92m.svelte-1h0f92m{position:relative;font-weight:600;font-size:0.9rem;z-index:2;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:100%}p.svelte-1h0f92m.svelte-1h0f92m{font-size:0.8rem;color:#222}.img_column.svelte-1h0f92m.svelte-1h0f92m{width:40%;height:100%;float:left;padding-right:5px;border-right:1px solid #e1e1e1;z-index:2;position:relative}.text_column.svelte-1h0f92m.svelte-1h0f92m{width:55%;height:100%;display:inline-block;margin-left:5px}img.svelte-1h0f92m.svelte-1h0f92m{width:100%}.grid.svelte-1h0f92m.svelte-1h0f92m:after{content:"";display:block;clear:both}h3.svelte-1h0f92m.svelte-1h0f92m{font-weight:900;text-overflow:ellipsis;overflow:hidden}hr.svelte-1h0f92m.svelte-1h0f92m{border-top:1px solid #e1e1e1}.grid-sizer.svelte-1h0f92m.svelte-1h0f92m,.grid-item.svelte-1h0f92m.svelte-1h0f92m{width:20%}.grid-item.svelte-1h0f92m.svelte-1h0f92m{height:120px;float:left;background-color:#ffffff;border-right:1px solid #bbb;border:1px solid #bbb}.full.svelte-1h0f92m.svelte-1h0f92m{width:100% !important;border:1px solid #bbb !important;cursor:auto !important}.grid-item--width2.svelte-1h0f92m.svelte-1h0f92m{width:40%}.grid-item--width3.svelte-1h0f92m.svelte-1h0f92m{width:60%}.grid-item--height2.svelte-1h0f92m.svelte-1h0f92m{height:200px}.grid-item--height3.svelte-1h0f92m.svelte-1h0f92m{height:260px}.grid-item--height4.svelte-1h0f92m.svelte-1h0f92m{height:360px}.grid-item--gigante{width:60% !important;height:360px !important;cursor:auto !important}.grid-item--gigante p.svelte-1h0f92m.svelte-1h0f92m{font-size:0.9rem}.grid-item.svelte-1h0f92m.svelte-1h0f92m:hover{border:2px solid #0fa0ce;cursor:pointer}@media only screen and (max-width: 760px){.img_column.svelte-1h0f92m a.svelte-1h0f92m:hover{opacity:1;border-bottom:0px}.full.svelte-1h0f92m h1.svelte-1h0f92m{font-size:4rem}h3.svelte-1h0f92m.svelte-1h0f92m{font-size:0.9rem !important}.text_column.svelte-1h0f92m.svelte-1h0f92m{font-size:0.7rem !important;width:100%;display:block;padding-top:15px;height:49%;overflow:hidden}.img_column.svelte-1h0f92m.svelte-1h0f92m{text-align:center;float:none;display:block;width:100%;height:50%;padding-right:0px;border-right:none;border-bottom:1px solid #e1e1e1}.grid-sizer.svelte-1h0f92m.svelte-1h0f92m,.grid-item.svelte-1h0f92m.svelte-1h0f92m{width:33.3333333333%}.grid-item--width2.svelte-1h0f92m.svelte-1h0f92m{width:66.66666%}img.svelte-1h0f92m.svelte-1h0f92m{width:auto !important;height:100% !important}.banner_left.svelte-1h0f92m.svelte-1h0f92m{height:120px !important}.title.svelte-1h0f92m.svelte-1h0f92m{font-size:2rem !important}.subtitle.svelte-1h0f92m.svelte-1h0f92m{line-height:normal}.break.svelte-1h0f92m.svelte-1h0f92m{font-size:2rem}.static-banner_right.svelte-1h0f92m.svelte-1h0f92m{padding:10px;opacity:0}.grid-item--gigante{width:100% !important;height:460px !important;cursor:auto !important}.iconlist.svelte-1h0f92m.svelte-1h0f92m{display:block}}

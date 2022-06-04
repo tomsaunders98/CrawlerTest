@@ -1,9 +1,19 @@
 /*!
- * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Masonry v4.2.2
+ * Cascading grid layout library
+ * https://masonry.desandro.com
+ * MIT License
+ * by David DeSandro
  */
 
 /*!
- * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Outlayer v2.1.1
+ * the brains and guts of a layout library
+ * MIT license
+ */
+
+/*!
+ * getSize v2.0.3
+ * measure size of elements
+ * MIT license
  */
